@@ -47,14 +47,15 @@ namespace Sistema_de_asistencias.Presentacion
             this.button8 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.PanelRegistros = new System.Windows.Forms.Panel();
+            this.dataListadoCargos = new System.Windows.Forms.DataGridView();
             this.PanelCargos = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btnGuardarCargo = new System.Windows.Forms.Button();
+            this.btnGuardarCambiosCargo = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtSueldoHoraG = new System.Windows.Forms.TextBox();
+            this.txtCargoG = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
@@ -81,6 +82,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.PanelPaginado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.PanelRegistros.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListadoCargos)).BeginInit();
             this.PanelCargos.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -312,6 +314,7 @@ namespace Sistema_de_asistencias.Presentacion
             // PanelRegistros
             // 
             this.PanelRegistros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.PanelRegistros.Controls.Add(this.dataListadoCargos);
             this.PanelRegistros.Controls.Add(this.PanelCargos);
             this.PanelRegistros.Controls.Add(this.button5);
             this.PanelRegistros.Controls.Add(this.flowLayoutPanel1);
@@ -337,13 +340,26 @@ namespace Sistema_de_asistencias.Presentacion
             this.PanelRegistros.TabIndex = 3;
             this.PanelRegistros.Visible = false;
             // 
+            // dataListadoCargos
+            // 
+            this.dataListadoCargos.AllowUserToAddRows = false;
+            this.dataListadoCargos.AllowUserToDeleteRows = false;
+            this.dataListadoCargos.AllowUserToResizeRows = false;
+            this.dataListadoCargos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListadoCargos.Location = new System.Drawing.Point(454, 210);
+            this.dataListadoCargos.Name = "dataListadoCargos";
+            this.dataListadoCargos.RowTemplate.Height = 25;
+            this.dataListadoCargos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataListadoCargos.Size = new System.Drawing.Size(227, 137);
+            this.dataListadoCargos.TabIndex = 14;
+            // 
             // PanelCargos
             // 
             this.PanelCargos.Controls.Add(this.flowLayoutPanel2);
             this.PanelCargos.Controls.Add(this.panel11);
             this.PanelCargos.Controls.Add(this.panel10);
-            this.PanelCargos.Controls.Add(this.textBox7);
-            this.PanelCargos.Controls.Add(this.textBox4);
+            this.PanelCargos.Controls.Add(this.txtSueldoHoraG);
+            this.PanelCargos.Controls.Add(this.txtCargoG);
             this.PanelCargos.Controls.Add(this.label11);
             this.PanelCargos.Controls.Add(this.label10);
             this.PanelCargos.Location = new System.Drawing.Point(687, 103);
@@ -353,46 +369,47 @@ namespace Sistema_de_asistencias.Presentacion
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Controls.Add(this.button11);
-            this.flowLayoutPanel2.Controls.Add(this.button12);
+            this.flowLayoutPanel2.Controls.Add(this.btnGuardarCargo);
+            this.flowLayoutPanel2.Controls.Add(this.btnGuardarCambiosCargo);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(107, 104);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(221, 70);
             this.flowLayoutPanel2.TabIndex = 12;
             // 
-            // button11
+            // btnGuardarCargo
             // 
-            this.button11.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.verde;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(3, 3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(100, 56);
-            this.button11.TabIndex = 0;
-            this.button11.Text = "Guardar";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btnGuardarCargo.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.verde;
+            this.btnGuardarCargo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGuardarCargo.FlatAppearance.BorderSize = 0;
+            this.btnGuardarCargo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnGuardarCargo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnGuardarCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarCargo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnGuardarCargo.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarCargo.Location = new System.Drawing.Point(3, 3);
+            this.btnGuardarCargo.Name = "btnGuardarCargo";
+            this.btnGuardarCargo.Size = new System.Drawing.Size(100, 56);
+            this.btnGuardarCargo.TabIndex = 0;
+            this.btnGuardarCargo.Text = "Guardar";
+            this.btnGuardarCargo.UseVisualStyleBackColor = true;
+            this.btnGuardarCargo.Click += new System.EventHandler(this.btnGuardarCargo_Click);
             // 
-            // button12
+            // btnGuardarCambiosCargo
             // 
-            this.button12.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.verde;
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(109, 3);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(100, 56);
-            this.button12.TabIndex = 1;
-            this.button12.Text = "Guardar*";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btnGuardarCambiosCargo.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.verde;
+            this.btnGuardarCambiosCargo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGuardarCambiosCargo.FlatAppearance.BorderSize = 0;
+            this.btnGuardarCambiosCargo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnGuardarCambiosCargo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnGuardarCambiosCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarCambiosCargo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnGuardarCambiosCargo.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarCambiosCargo.Location = new System.Drawing.Point(109, 3);
+            this.btnGuardarCambiosCargo.Name = "btnGuardarCambiosCargo";
+            this.btnGuardarCambiosCargo.Size = new System.Drawing.Size(100, 56);
+            this.btnGuardarCambiosCargo.TabIndex = 1;
+            this.btnGuardarCambiosCargo.Text = "Guardar*";
+            this.btnGuardarCambiosCargo.UseVisualStyleBackColor = true;
             // 
             // panel11
             // 
@@ -410,27 +427,28 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel10.Size = new System.Drawing.Size(270, 2);
             this.panel10.TabIndex = 9;
             // 
-            // textBox7
+            // txtSueldoHoraG
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.ForeColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(148, 55);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(270, 22);
-            this.textBox7.TabIndex = 8;
+            this.txtSueldoHoraG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.txtSueldoHoraG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSueldoHoraG.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtSueldoHoraG.ForeColor = System.Drawing.Color.White;
+            this.txtSueldoHoraG.Location = new System.Drawing.Point(148, 55);
+            this.txtSueldoHoraG.Name = "txtSueldoHoraG";
+            this.txtSueldoHoraG.Size = new System.Drawing.Size(270, 22);
+            this.txtSueldoHoraG.TabIndex = 8;
+            this.txtSueldoHoraG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSueldoHoraG_KeyPress);
             // 
-            // textBox4
+            // txtCargoG
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(148, 13);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(270, 22);
-            this.textBox4.TabIndex = 8;
+            this.txtCargoG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.txtCargoG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCargoG.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtCargoG.ForeColor = System.Drawing.Color.White;
+            this.txtCargoG.Location = new System.Drawing.Point(148, 13);
+            this.txtCargoG.Name = "txtCargoG";
+            this.txtCargoG.Size = new System.Drawing.Size(270, 22);
+            this.txtCargoG.TabIndex = 8;
             // 
             // label11
             // 
@@ -493,6 +511,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.btnGuardarPersonal.TabIndex = 0;
             this.btnGuardarPersonal.Text = "Guardar";
             this.btnGuardarPersonal.UseVisualStyleBackColor = true;
+            this.btnGuardarPersonal.Click += new System.EventHandler(this.btnGuardarPersonal_Click);
             // 
             // btnGuardarCambiosPersonal
             // 
@@ -523,6 +542,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.btnAgregarCargo.TabIndex = 10;
             this.btnAgregarCargo.Text = "+ Agregar cargo";
             this.btnAgregarCargo.UseVisualStyleBackColor = true;
+            this.btnAgregarCargo.Click += new System.EventHandler(this.btnAgregarCargo_Click);
             // 
             // cbxPais
             // 
@@ -762,6 +782,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.txtSueldoHora.Name = "txtSueldoHora";
             this.txtSueldoHora.Size = new System.Drawing.Size(198, 22);
             this.txtSueldoHora.TabIndex = 7;
+            this.txtSueldoHora.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSueldoHora_KeyPress);
             // 
             // txtCargo
             // 
@@ -773,6 +794,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(283, 22);
             this.txtCargo.TabIndex = 7;
+            this.txtCargo.TextChanged += new System.EventHandler(this.txtCargo_TextChanged);
             // 
             // panel5
             // 
@@ -872,6 +894,7 @@ namespace Sistema_de_asistencias.Presentacion
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.PanelRegistros.ResumeLayout(false);
             this.PanelRegistros.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListadoCargos)).EndInit();
             this.PanelCargos.ResumeLayout(false);
             this.PanelCargos.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
@@ -918,15 +941,16 @@ namespace Sistema_de_asistencias.Presentacion
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel PanelCargos;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnGuardarCargo;
+        private System.Windows.Forms.Button btnGuardarCambiosCargo;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtSueldoHoraG;
+        private System.Windows.Forms.TextBox txtCargoG;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnGuardarCambiosPersonal;
+        private System.Windows.Forms.DataGridView dataListadoCargos;
     }
 }

@@ -62,7 +62,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.PanelPrincipal = new System.Windows.Forms.Panel();
             this.panelBienvenida = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -77,7 +77,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.PanelPrincipal.SuspendLayout();
             this.panelBienvenida.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -369,7 +369,6 @@ namespace Sistema_de_asistencias.Presentacion
             this.btnRegistro.Text = "Registro";
             this.btnRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRegistro.UseVisualStyleBackColor = false;
-            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
             // 
             // panel7
             // 
@@ -401,6 +400,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.btnPersonal.TabIndex = 2;
             this.btnPersonal.Text = "Personal";
             this.btnPersonal.UseVisualStyleBackColor = false;
+            this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
             // 
             // btnConsultas
             // 
@@ -458,15 +458,15 @@ namespace Sistema_de_asistencias.Presentacion
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
-            // panel2
+            // PanelPrincipal
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.panel2.Controls.Add(this.panelBienvenida);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(191, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(817, 641);
-            this.panel2.TabIndex = 1;
+            this.PanelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.PanelPrincipal.Controls.Add(this.panelBienvenida);
+            this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelPrincipal.Location = new System.Drawing.Point(191, 0);
+            this.PanelPrincipal.Name = "PanelPrincipal";
+            this.PanelPrincipal.Size = new System.Drawing.Size(817, 641);
+            this.PanelPrincipal.TabIndex = 1;
             // 
             // panelBienvenida
             // 
@@ -493,7 +493,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 641);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.PanelPrincipal);
             this.Controls.Add(this.panel1);
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -512,7 +512,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel2.ResumeLayout(false);
+            this.PanelPrincipal.ResumeLayout(false);
             this.panelBienvenida.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -523,7 +523,7 @@ namespace Sistema_de_asistencias.Presentacion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnConsultas;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel PanelPrincipal;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnPersonal;
         private System.Windows.Forms.Panel panel5;

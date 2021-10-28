@@ -20,9 +20,13 @@ namespace Sistema_de_asistencias.Presentacion
             panelBienvenida.Dock = DockStyle.Fill;
         }
 
-        private void btnRegistro_Click(object sender, EventArgs e)
+        private void btnPersonal_Click(object sender, EventArgs e)
         {
-
+            // Limpiamos el panel principal
+            PanelPrincipal.Controls.Clear();
+            Personal control = new Personal();
+            control.Dock = DockStyle.Fill;
+            PanelPrincipal.Controls.Add(control);
         }
     }
 }

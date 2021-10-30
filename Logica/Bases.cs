@@ -11,7 +11,28 @@ namespace Sistema_de_asistencias.Logica
         public static void DiseñoDtv(ref DataGridView Listado)
         {
             Listado.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            Listado.BackgroundColor = Color.Red;
+            // Color de fondo del listado
+            Listado.BackgroundColor = Color.FromArgb(29, 29, 29);
+            // Inhabilita el estilo por defecto de los encabezados
+            Listado.EnableHeadersVisualStyles = false;
+            // Elimina los bordes
+            Listado.BorderStyle = BorderStyle.None;
+            // Elimina los bordes de las celdas
+            Listado.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            // Elimina los bordes de las columnas
+            Listado.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            // Elimina el triángulo del lado izquierdo
+            Listado.RowHeadersVisible = false;
+            // Crearemos nuevos estilos para la cabecera
+            DataGridViewCellStyle cabecera = new DataGridViewCellStyle();
+            // Cambia el color de fondo de la cabecera
+            cabecera.BackColor = Color.FromArgb(29, 29, 29);
+            // Cambia el color de la letra de la cabecera
+            cabecera.ForeColor = Color.White;
+            // Cambia la fuente de la cabecera, fuente: Segoe UI; tamaño: 10, Negrita
+            cabecera.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            // Establece los estilos definidos a la cabecera del objeto DataGridView
+            Listado.ColumnHeadersDefaultCellStyle = cabecera;
         }
         public static object Decimales(TextBox CajaTexto, KeyPressEventArgs e)
         {

@@ -167,6 +167,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.btnEstaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.btnEstaciones.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.naranja;
             this.btnEstaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEstaciones.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEstaciones.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEstaciones.FlatAppearance.BorderSize = 0;
             this.btnEstaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -220,6 +221,7 @@ namespace Sistema_de_asistencias.Presentacion
             // btnRespaldos
             // 
             this.btnRespaldos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.btnRespaldos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRespaldos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnRespaldos.FlatAppearance.BorderSize = 0;
             this.btnRespaldos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -265,6 +267,7 @@ namespace Sistema_de_asistencias.Presentacion
             // btnRestaurarBD
             // 
             this.btnRestaurarBD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.btnRestaurarBD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurarBD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnRestaurarBD.FlatAppearance.BorderSize = 0;
             this.btnRestaurarBD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -310,6 +313,7 @@ namespace Sistema_de_asistencias.Presentacion
             // btnUsuarios
             // 
             this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.btnUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnUsuarios.FlatAppearance.BorderSize = 0;
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -355,6 +359,7 @@ namespace Sistema_de_asistencias.Presentacion
             // btnRegistro
             // 
             this.btnRegistro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.btnRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnRegistro.FlatAppearance.BorderSize = 0;
             this.btnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -389,6 +394,7 @@ namespace Sistema_de_asistencias.Presentacion
             // btnPersonal
             // 
             this.btnPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.btnPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPersonal.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnPersonal.FlatAppearance.BorderSize = 0;
             this.btnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -405,6 +411,7 @@ namespace Sistema_de_asistencias.Presentacion
             // btnConsultas
             // 
             this.btnConsultas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.btnConsultas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConsultas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnConsultas.FlatAppearance.BorderSize = 0;
             this.btnConsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

@@ -17,6 +17,7 @@ namespace Sistema_de_asistencias
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            // Qué pantalla se mostrará al inicio de la aplicación
             Application.Run(new Presentacion.MenuPrincipal());
         }
     }

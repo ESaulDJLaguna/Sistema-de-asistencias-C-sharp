@@ -29,111 +29,121 @@ namespace Sistema_de_asistencias.Presentacion
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
+            this.BtnMostrarTodo = new System.Windows.Forms.Button();
+            this.BtnAgregar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtBuscador = new System.Windows.Forms.TextBox();
             this.PanelPaginado = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.BtnUltimaPagina = new System.Windows.Forms.Button();
+            this.LblTotalPaginas = new System.Windows.Forms.Label();
+            this.LblPagina = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.BtnPrimerPagina = new System.Windows.Forms.Button();
+            this.BtnAnterior = new System.Windows.Forms.Button();
+            this.BtnSiguiente = new System.Windows.Forms.Button();
             this.PanelRegistros = new System.Windows.Forms.Panel();
-            this.dataListadoCargos = new System.Windows.Forms.DataGridView();
+            this.DataListadoCargos = new System.Windows.Forms.DataGridView();
             this.EditarC = new System.Windows.Forms.DataGridViewImageColumn();
             this.PanelCargos = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnGuardarCargo = new System.Windows.Forms.Button();
-            this.btnGuardarCambiosCargo = new System.Windows.Forms.Button();
-            this.btnVolverCargos = new System.Windows.Forms.Button();
+            this.BtnGuardarCargo = new System.Windows.Forms.Button();
+            this.BtnGuardarCambiosCargo = new System.Windows.Forms.Button();
+            this.BtnVolverCargos = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.txtSueldoHoraG = new System.Windows.Forms.TextBox();
-            this.txtCargoG = new System.Windows.Forms.TextBox();
+            this.TxtSueldoHoraG = new System.Windows.Forms.TextBox();
+            this.TxtCargoG = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnVolverPersonal = new System.Windows.Forms.Button();
+            this.BtnVolverPersonal = new System.Windows.Forms.Button();
             this.PanelBtnGuardarPersonal = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnGuardarPersonal = new System.Windows.Forms.Button();
-            this.btnGuardarCambiosPersonal = new System.Windows.Forms.Button();
+            this.BtnGuardarPersonal = new System.Windows.Forms.Button();
+            this.BtnGuardarCambiosPersonal = new System.Windows.Forms.Button();
             this.btnAgregarCargo = new System.Windows.Forms.Button();
-            this.cbxPais = new System.Windows.Forms.ComboBox();
+            this.CbxPais = new System.Windows.Forms.ComboBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.txtSueldoHora = new System.Windows.Forms.TextBox();
-            this.txtCargo = new System.Windows.Forms.TextBox();
+            this.TxtSueldoHora = new System.Windows.Forms.TextBox();
+            this.TxtCargo = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.txtIdentificacion = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.TxtIdentificacion = new System.Windows.Forms.TextBox();
+            this.TxtNombre = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblSueldo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.DataListadoPersonal = new System.Windows.Forms.DataGridView();
+            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelPaginado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.PanelRegistros.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataListadoCargos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataListadoCargos)).BeginInit();
             this.PanelCargos.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.PanelBtnGuardarPersonal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataListadoPersonal)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.btnAgregar);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.BtnMostrarTodo);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.TxtBuscador);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1190, 80);
             this.panel1.TabIndex = 0;
             // 
-            // button6
+            // BtnMostrarTodo
             // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(463, 21);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(153, 40);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Mostrar todos";
-            this.button6.UseVisualStyleBackColor = true;
+            this.BtnMostrarTodo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMostrarTodo.FlatAppearance.BorderSize = 0;
+            this.BtnMostrarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMostrarTodo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnMostrarTodo.ForeColor = System.Drawing.Color.White;
+            this.BtnMostrarTodo.Location = new System.Drawing.Point(463, 21);
+            this.BtnMostrarTodo.Name = "BtnMostrarTodo";
+            this.BtnMostrarTodo.Size = new System.Drawing.Size(153, 40);
+            this.BtnMostrarTodo.TabIndex = 11;
+            this.BtnMostrarTodo.Text = "Mostrar todos";
+            this.BtnMostrarTodo.UseVisualStyleBackColor = true;
+            this.BtnMostrarTodo.Click += new System.EventHandler(this.BtnMostrarTodo_Click);
             // 
-            // btnAgregar
+            // BtnAgregar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.btnAgregar.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.mas;
-            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnAgregar.FlatAppearance.BorderSize = 0;
-            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Location = new System.Drawing.Point(1110, 0);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(80, 80);
-            this.btnAgregar.TabIndex = 3;
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.BtnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.BtnAgregar.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.mas;
+            this.BtnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAgregar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BtnAgregar.FlatAppearance.BorderSize = 0;
+            this.BtnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgregar.Location = new System.Drawing.Point(11, 10);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(62, 60);
+            this.BtnAgregar.TabIndex = 3;
+            this.BtnAgregar.UseVisualStyleBackColor = false;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // pictureBox1
             // 
@@ -153,28 +163,29 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel3.Size = new System.Drawing.Size(309, 2);
             this.panel3.TabIndex = 1;
             // 
-            // textBox1
+            // TxtBuscador
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(52, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(309, 22);
-            this.textBox1.TabIndex = 0;
+            this.TxtBuscador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.TxtBuscador.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtBuscador.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtBuscador.ForeColor = System.Drawing.Color.White;
+            this.TxtBuscador.Location = new System.Drawing.Point(52, 45);
+            this.TxtBuscador.Name = "TxtBuscador";
+            this.TxtBuscador.Size = new System.Drawing.Size(309, 22);
+            this.TxtBuscador.TabIndex = 0;
+            this.TxtBuscador.TextChanged += new System.EventHandler(this.TxtBuscador_TextChanged);
             // 
             // PanelPaginado
             // 
             this.PanelPaginado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
-            this.PanelPaginado.Controls.Add(this.button10);
-            this.PanelPaginado.Controls.Add(this.label9);
-            this.PanelPaginado.Controls.Add(this.label8);
+            this.PanelPaginado.Controls.Add(this.BtnUltimaPagina);
+            this.PanelPaginado.Controls.Add(this.LblTotalPaginas);
+            this.PanelPaginado.Controls.Add(this.LblPagina);
             this.PanelPaginado.Controls.Add(this.label6);
             this.PanelPaginado.Controls.Add(this.label7);
-            this.PanelPaginado.Controls.Add(this.button9);
-            this.PanelPaginado.Controls.Add(this.button7);
-            this.PanelPaginado.Controls.Add(this.button8);
+            this.PanelPaginado.Controls.Add(this.BtnPrimerPagina);
+            this.PanelPaginado.Controls.Add(this.BtnAnterior);
+            this.PanelPaginado.Controls.Add(this.BtnSiguiente);
             this.PanelPaginado.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.PanelPaginado.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.PanelPaginado.ForeColor = System.Drawing.Color.White;
@@ -183,43 +194,44 @@ namespace Sistema_de_asistencias.Presentacion
             this.PanelPaginado.Size = new System.Drawing.Size(1190, 80);
             this.PanelPaginado.TabIndex = 1;
             // 
-            // button10
+            // BtnUltimaPagina
             // 
-            this.button10.BackColor = System.Drawing.Color.Silver;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button10.ForeColor = System.Drawing.Color.Black;
-            this.button10.Location = new System.Drawing.Point(871, 12);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(145, 56);
-            this.button10.TabIndex = 6;
-            this.button10.Text = "Última página";
-            this.button10.UseVisualStyleBackColor = false;
+            this.BtnUltimaPagina.BackColor = System.Drawing.Color.Silver;
+            this.BtnUltimaPagina.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnUltimaPagina.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnUltimaPagina.FlatAppearance.BorderSize = 0;
+            this.BtnUltimaPagina.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnUltimaPagina.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnUltimaPagina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUltimaPagina.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnUltimaPagina.ForeColor = System.Drawing.Color.Black;
+            this.BtnUltimaPagina.Location = new System.Drawing.Point(871, 12);
+            this.BtnUltimaPagina.Name = "BtnUltimaPagina";
+            this.BtnUltimaPagina.Size = new System.Drawing.Size(145, 56);
+            this.BtnUltimaPagina.TabIndex = 6;
+            this.BtnUltimaPagina.Text = "Última página";
+            this.BtnUltimaPagina.UseVisualStyleBackColor = false;
+            this.BtnUltimaPagina.Click += new System.EventHandler(this.BtnUltimaPagina_Click);
             // 
-            // label9
+            // LblTotalPaginas
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(677, 24);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(28, 32);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "0";
+            this.LblTotalPaginas.AutoSize = true;
+            this.LblTotalPaginas.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblTotalPaginas.Location = new System.Drawing.Point(677, 24);
+            this.LblTotalPaginas.Name = "LblTotalPaginas";
+            this.LblTotalPaginas.Size = new System.Drawing.Size(28, 32);
+            this.LblTotalPaginas.TabIndex = 5;
+            this.LblTotalPaginas.Text = "0";
             // 
-            // label8
+            // LblPagina
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(602, 24);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(28, 32);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "0";
+            this.LblPagina.AutoSize = true;
+            this.LblPagina.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblPagina.Location = new System.Drawing.Point(602, 24);
+            this.LblPagina.Name = "LblPagina";
+            this.LblPagina.Size = new System.Drawing.Size(28, 32);
+            this.LblPagina.TabIndex = 5;
+            this.LblPagina.Text = "0";
             // 
             // label6
             // 
@@ -241,102 +253,80 @@ namespace Sistema_de_asistencias.Presentacion
             this.label7.TabIndex = 4;
             this.label7.Text = "Página";
             // 
-            // button9
+            // BtnPrimerPagina
             // 
-            this.button9.BackColor = System.Drawing.Color.Silver;
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Location = new System.Drawing.Point(720, 12);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(145, 56);
-            this.button9.TabIndex = 1;
-            this.button9.Text = "Primer página";
-            this.button9.UseVisualStyleBackColor = false;
+            this.BtnPrimerPagina.BackColor = System.Drawing.Color.Silver;
+            this.BtnPrimerPagina.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnPrimerPagina.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnPrimerPagina.FlatAppearance.BorderSize = 0;
+            this.BtnPrimerPagina.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnPrimerPagina.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnPrimerPagina.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPrimerPagina.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnPrimerPagina.ForeColor = System.Drawing.Color.Black;
+            this.BtnPrimerPagina.Location = new System.Drawing.Point(720, 12);
+            this.BtnPrimerPagina.Name = "BtnPrimerPagina";
+            this.BtnPrimerPagina.Size = new System.Drawing.Size(145, 56);
+            this.BtnPrimerPagina.TabIndex = 1;
+            this.BtnPrimerPagina.Text = "Primer página";
+            this.BtnPrimerPagina.UseVisualStyleBackColor = false;
+            this.BtnPrimerPagina.Click += new System.EventHandler(this.BtnPrimerPagina_Click);
             // 
-            // button7
+            // BtnAnterior
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(224)))), ((int)(((byte)(87)))));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(174, 12);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(145, 56);
-            this.button7.TabIndex = 1;
-            this.button7.Text = "Página anterior";
-            this.button7.UseVisualStyleBackColor = false;
+            this.BtnAnterior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(224)))), ((int)(((byte)(87)))));
+            this.BtnAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnAnterior.FlatAppearance.BorderSize = 0;
+            this.BtnAnterior.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnAnterior.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnAnterior.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAnterior.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnAnterior.ForeColor = System.Drawing.Color.Black;
+            this.BtnAnterior.Location = new System.Drawing.Point(174, 12);
+            this.BtnAnterior.Name = "BtnAnterior";
+            this.BtnAnterior.Size = new System.Drawing.Size(145, 56);
+            this.BtnAnterior.TabIndex = 1;
+            this.BtnAnterior.Text = "Página anterior";
+            this.BtnAnterior.UseVisualStyleBackColor = false;
+            this.BtnAnterior.Click += new System.EventHandler(this.BtnAnterior_Click);
             // 
-            // button8
+            // BtnSiguiente
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(224)))), ((int)(((byte)(87)))));
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button8.ForeColor = System.Drawing.Color.Black;
-            this.button8.Location = new System.Drawing.Point(325, 12);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(157, 56);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "Página siguiente";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.ColumnHeadersVisible = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 80);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1190, 411);
-            this.dataGridView1.TabIndex = 2;
+            this.BtnSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(224)))), ((int)(((byte)(87)))));
+            this.BtnSiguiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnSiguiente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSiguiente.FlatAppearance.BorderSize = 0;
+            this.BtnSiguiente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnSiguiente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSiguiente.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnSiguiente.ForeColor = System.Drawing.Color.Black;
+            this.BtnSiguiente.Location = new System.Drawing.Point(325, 12);
+            this.BtnSiguiente.Name = "BtnSiguiente";
+            this.BtnSiguiente.Size = new System.Drawing.Size(157, 56);
+            this.BtnSiguiente.TabIndex = 2;
+            this.BtnSiguiente.Text = "Página siguiente";
+            this.BtnSiguiente.UseVisualStyleBackColor = false;
+            this.BtnSiguiente.Click += new System.EventHandler(this.BtnSiguiente_Click);
             // 
             // PanelRegistros
             // 
             this.PanelRegistros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.PanelRegistros.Controls.Add(this.dataListadoCargos);
+            this.PanelRegistros.Controls.Add(this.DataListadoCargos);
             this.PanelRegistros.Controls.Add(this.PanelCargos);
-            this.PanelRegistros.Controls.Add(this.btnVolverPersonal);
+            this.PanelRegistros.Controls.Add(this.BtnVolverPersonal);
             this.PanelRegistros.Controls.Add(this.PanelBtnGuardarPersonal);
             this.PanelRegistros.Controls.Add(this.btnAgregarCargo);
-            this.PanelRegistros.Controls.Add(this.cbxPais);
+            this.PanelRegistros.Controls.Add(this.CbxPais);
             this.PanelRegistros.Controls.Add(this.panel9);
             this.PanelRegistros.Controls.Add(this.panel8);
             this.PanelRegistros.Controls.Add(this.panel6);
-            this.PanelRegistros.Controls.Add(this.txtSueldoHora);
-            this.PanelRegistros.Controls.Add(this.txtCargo);
+            this.PanelRegistros.Controls.Add(this.TxtSueldoHora);
+            this.PanelRegistros.Controls.Add(this.TxtCargo);
             this.PanelRegistros.Controls.Add(this.panel5);
-            this.PanelRegistros.Controls.Add(this.txtIdentificacion);
-            this.PanelRegistros.Controls.Add(this.txtNombre);
+            this.PanelRegistros.Controls.Add(this.TxtIdentificacion);
+            this.PanelRegistros.Controls.Add(this.TxtNombre);
             this.PanelRegistros.Controls.Add(this.label5);
             this.PanelRegistros.Controls.Add(this.label4);
             this.PanelRegistros.Controls.Add(this.lblSueldo);
@@ -349,37 +339,37 @@ namespace Sistema_de_asistencias.Presentacion
             this.PanelRegistros.TabIndex = 3;
             this.PanelRegistros.Visible = false;
             // 
-            // dataListadoCargos
+            // DataListadoCargos
             // 
-            this.dataListadoCargos.AllowUserToAddRows = false;
-            this.dataListadoCargos.AllowUserToDeleteRows = false;
-            this.dataListadoCargos.AllowUserToResizeRows = false;
-            this.dataListadoCargos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListadoCargos.ColumnHeadersVisible = false;
-            this.dataListadoCargos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DataListadoCargos.AllowUserToAddRows = false;
+            this.DataListadoCargos.AllowUserToDeleteRows = false;
+            this.DataListadoCargos.AllowUserToResizeRows = false;
+            this.DataListadoCargos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataListadoCargos.ColumnHeadersVisible = false;
+            this.DataListadoCargos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EditarC});
-            this.dataListadoCargos.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataListadoCargos.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataListadoCargos.Location = new System.Drawing.Point(454, 210);
-            this.dataListadoCargos.Name = "dataListadoCargos";
-            this.dataListadoCargos.ReadOnly = true;
-            this.dataListadoCargos.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.dataListadoCargos.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dataListadoCargos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
-            this.dataListadoCargos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.dataListadoCargos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.dataListadoCargos.RowTemplate.Height = 40;
-            this.dataListadoCargos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListadoCargos.Size = new System.Drawing.Size(227, 137);
-            this.dataListadoCargos.TabIndex = 14;
-            this.dataListadoCargos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListadoCargos_CellClick);
+            this.DataListadoCargos.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataListadoCargos.DefaultCellStyle = dataGridViewCellStyle1;
+            this.DataListadoCargos.Location = new System.Drawing.Point(454, 210);
+            this.DataListadoCargos.Name = "DataListadoCargos";
+            this.DataListadoCargos.ReadOnly = true;
+            this.DataListadoCargos.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.DataListadoCargos.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DataListadoCargos.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.DataListadoCargos.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.DataListadoCargos.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.DataListadoCargos.RowTemplate.Height = 40;
+            this.DataListadoCargos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataListadoCargos.Size = new System.Drawing.Size(227, 137);
+            this.DataListadoCargos.TabIndex = 14;
+            this.DataListadoCargos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListadoCargos_CellClick);
             // 
             // EditarC
             // 
@@ -394,8 +384,8 @@ namespace Sistema_de_asistencias.Presentacion
             this.PanelCargos.Controls.Add(this.flowLayoutPanel2);
             this.PanelCargos.Controls.Add(this.panel11);
             this.PanelCargos.Controls.Add(this.panel10);
-            this.PanelCargos.Controls.Add(this.txtSueldoHoraG);
-            this.PanelCargos.Controls.Add(this.txtCargoG);
+            this.PanelCargos.Controls.Add(this.TxtSueldoHoraG);
+            this.PanelCargos.Controls.Add(this.TxtCargoG);
             this.PanelCargos.Controls.Add(this.label11);
             this.PanelCargos.Controls.Add(this.label10);
             this.PanelCargos.Location = new System.Drawing.Point(687, 103);
@@ -405,69 +395,69 @@ namespace Sistema_de_asistencias.Presentacion
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.Controls.Add(this.btnGuardarCargo);
-            this.flowLayoutPanel2.Controls.Add(this.btnGuardarCambiosCargo);
-            this.flowLayoutPanel2.Controls.Add(this.btnVolverCargos);
+            this.flowLayoutPanel2.Controls.Add(this.BtnGuardarCargo);
+            this.flowLayoutPanel2.Controls.Add(this.BtnGuardarCambiosCargo);
+            this.flowLayoutPanel2.Controls.Add(this.BtnVolverCargos);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(68, 104);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(299, 70);
             this.flowLayoutPanel2.TabIndex = 12;
             // 
-            // btnGuardarCargo
+            // BtnGuardarCargo
             // 
-            this.btnGuardarCargo.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.verde;
-            this.btnGuardarCargo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGuardarCargo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardarCargo.FlatAppearance.BorderSize = 0;
-            this.btnGuardarCargo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnGuardarCargo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnGuardarCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarCargo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGuardarCargo.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarCargo.Location = new System.Drawing.Point(3, 3);
-            this.btnGuardarCargo.Name = "btnGuardarCargo";
-            this.btnGuardarCargo.Size = new System.Drawing.Size(100, 56);
-            this.btnGuardarCargo.TabIndex = 0;
-            this.btnGuardarCargo.Text = "Guardar";
-            this.btnGuardarCargo.UseVisualStyleBackColor = true;
-            this.btnGuardarCargo.Click += new System.EventHandler(this.btnGuardarCargo_Click);
+            this.BtnGuardarCargo.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.verde;
+            this.BtnGuardarCargo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnGuardarCargo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnGuardarCargo.FlatAppearance.BorderSize = 0;
+            this.BtnGuardarCargo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnGuardarCargo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnGuardarCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGuardarCargo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnGuardarCargo.ForeColor = System.Drawing.Color.White;
+            this.BtnGuardarCargo.Location = new System.Drawing.Point(3, 3);
+            this.BtnGuardarCargo.Name = "BtnGuardarCargo";
+            this.BtnGuardarCargo.Size = new System.Drawing.Size(100, 56);
+            this.BtnGuardarCargo.TabIndex = 0;
+            this.BtnGuardarCargo.Text = "Guardar";
+            this.BtnGuardarCargo.UseVisualStyleBackColor = true;
+            this.BtnGuardarCargo.Click += new System.EventHandler(this.BtnGuardarCargo_Click);
             // 
-            // btnGuardarCambiosCargo
+            // BtnGuardarCambiosCargo
             // 
-            this.btnGuardarCambiosCargo.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.verde;
-            this.btnGuardarCambiosCargo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGuardarCambiosCargo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardarCambiosCargo.FlatAppearance.BorderSize = 0;
-            this.btnGuardarCambiosCargo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnGuardarCambiosCargo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnGuardarCambiosCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarCambiosCargo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGuardarCambiosCargo.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarCambiosCargo.Location = new System.Drawing.Point(109, 3);
-            this.btnGuardarCambiosCargo.Name = "btnGuardarCambiosCargo";
-            this.btnGuardarCambiosCargo.Size = new System.Drawing.Size(100, 56);
-            this.btnGuardarCambiosCargo.TabIndex = 1;
-            this.btnGuardarCambiosCargo.Text = "Guardar*";
-            this.btnGuardarCambiosCargo.UseVisualStyleBackColor = true;
-            this.btnGuardarCambiosCargo.Click += new System.EventHandler(this.btnGuardarCambiosCargo_Click);
+            this.BtnGuardarCambiosCargo.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.verde;
+            this.BtnGuardarCambiosCargo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnGuardarCambiosCargo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnGuardarCambiosCargo.FlatAppearance.BorderSize = 0;
+            this.BtnGuardarCambiosCargo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnGuardarCambiosCargo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnGuardarCambiosCargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGuardarCambiosCargo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnGuardarCambiosCargo.ForeColor = System.Drawing.Color.White;
+            this.BtnGuardarCambiosCargo.Location = new System.Drawing.Point(109, 3);
+            this.BtnGuardarCambiosCargo.Name = "BtnGuardarCambiosCargo";
+            this.BtnGuardarCambiosCargo.Size = new System.Drawing.Size(100, 56);
+            this.BtnGuardarCambiosCargo.TabIndex = 1;
+            this.BtnGuardarCambiosCargo.Text = "Guardar*";
+            this.BtnGuardarCambiosCargo.UseVisualStyleBackColor = true;
+            this.BtnGuardarCambiosCargo.Click += new System.EventHandler(this.BtnGuardarCambiosCargo_Click);
             // 
-            // btnVolverCargos
+            // BtnVolverCargos
             // 
-            this.btnVolverCargos.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.volver;
-            this.btnVolverCargos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnVolverCargos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVolverCargos.FlatAppearance.BorderSize = 0;
-            this.btnVolverCargos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnVolverCargos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnVolverCargos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolverCargos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnVolverCargos.ForeColor = System.Drawing.Color.White;
-            this.btnVolverCargos.Location = new System.Drawing.Point(215, 3);
-            this.btnVolverCargos.Name = "btnVolverCargos";
-            this.btnVolverCargos.Size = new System.Drawing.Size(76, 56);
-            this.btnVolverCargos.TabIndex = 13;
-            this.btnVolverCargos.UseVisualStyleBackColor = true;
-            this.btnVolverCargos.Click += new System.EventHandler(this.btnVolverCargos_Click);
+            this.BtnVolverCargos.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.volver;
+            this.BtnVolverCargos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnVolverCargos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnVolverCargos.FlatAppearance.BorderSize = 0;
+            this.BtnVolverCargos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnVolverCargos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnVolverCargos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVolverCargos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnVolverCargos.ForeColor = System.Drawing.Color.White;
+            this.BtnVolverCargos.Location = new System.Drawing.Point(215, 3);
+            this.BtnVolverCargos.Name = "BtnVolverCargos";
+            this.BtnVolverCargos.Size = new System.Drawing.Size(76, 56);
+            this.BtnVolverCargos.TabIndex = 13;
+            this.BtnVolverCargos.UseVisualStyleBackColor = true;
+            this.BtnVolverCargos.Click += new System.EventHandler(this.BtnVolverCargos_Click);
             // 
             // panel11
             // 
@@ -485,28 +475,28 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel10.Size = new System.Drawing.Size(270, 2);
             this.panel10.TabIndex = 9;
             // 
-            // txtSueldoHoraG
+            // TxtSueldoHoraG
             // 
-            this.txtSueldoHoraG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.txtSueldoHoraG.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSueldoHoraG.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtSueldoHoraG.ForeColor = System.Drawing.Color.White;
-            this.txtSueldoHoraG.Location = new System.Drawing.Point(148, 55);
-            this.txtSueldoHoraG.Name = "txtSueldoHoraG";
-            this.txtSueldoHoraG.Size = new System.Drawing.Size(270, 22);
-            this.txtSueldoHoraG.TabIndex = 8;
-            this.txtSueldoHoraG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSueldoHoraG_KeyPress);
+            this.TxtSueldoHoraG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.TxtSueldoHoraG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtSueldoHoraG.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtSueldoHoraG.ForeColor = System.Drawing.Color.White;
+            this.TxtSueldoHoraG.Location = new System.Drawing.Point(148, 55);
+            this.TxtSueldoHoraG.Name = "TxtSueldoHoraG";
+            this.TxtSueldoHoraG.Size = new System.Drawing.Size(270, 22);
+            this.TxtSueldoHoraG.TabIndex = 8;
+            this.TxtSueldoHoraG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSueldoHoraG_KeyPress);
             // 
-            // txtCargoG
+            // TxtCargoG
             // 
-            this.txtCargoG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.txtCargoG.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCargoG.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCargoG.ForeColor = System.Drawing.Color.White;
-            this.txtCargoG.Location = new System.Drawing.Point(148, 13);
-            this.txtCargoG.Name = "txtCargoG";
-            this.txtCargoG.Size = new System.Drawing.Size(270, 22);
-            this.txtCargoG.TabIndex = 8;
+            this.TxtCargoG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.TxtCargoG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtCargoG.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtCargoG.ForeColor = System.Drawing.Color.White;
+            this.TxtCargoG.Location = new System.Drawing.Point(148, 13);
+            this.TxtCargoG.Name = "TxtCargoG";
+            this.TxtCargoG.Size = new System.Drawing.Size(270, 22);
+            this.TxtCargoG.TabIndex = 8;
             // 
             // label11
             // 
@@ -528,69 +518,70 @@ namespace Sistema_de_asistencias.Presentacion
             this.label10.TabIndex = 7;
             this.label10.Text = "Cargo:";
             // 
-            // btnVolverPersonal
+            // BtnVolverPersonal
             // 
-            this.btnVolverPersonal.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.volver;
-            this.btnVolverPersonal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnVolverPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVolverPersonal.FlatAppearance.BorderSize = 0;
-            this.btnVolverPersonal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnVolverPersonal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnVolverPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolverPersonal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnVolverPersonal.ForeColor = System.Drawing.Color.White;
-            this.btnVolverPersonal.Location = new System.Drawing.Point(718, 20);
-            this.btnVolverPersonal.Name = "btnVolverPersonal";
-            this.btnVolverPersonal.Size = new System.Drawing.Size(76, 56);
-            this.btnVolverPersonal.TabIndex = 12;
-            this.btnVolverPersonal.UseVisualStyleBackColor = true;
-            this.btnVolverPersonal.Click += new System.EventHandler(this.btnVolverPersonal_Click);
+            this.BtnVolverPersonal.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.volver;
+            this.BtnVolverPersonal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnVolverPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnVolverPersonal.FlatAppearance.BorderSize = 0;
+            this.BtnVolverPersonal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnVolverPersonal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnVolverPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVolverPersonal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnVolverPersonal.ForeColor = System.Drawing.Color.White;
+            this.BtnVolverPersonal.Location = new System.Drawing.Point(718, 20);
+            this.BtnVolverPersonal.Name = "BtnVolverPersonal";
+            this.BtnVolverPersonal.Size = new System.Drawing.Size(76, 56);
+            this.BtnVolverPersonal.TabIndex = 12;
+            this.BtnVolverPersonal.UseVisualStyleBackColor = true;
+            this.BtnVolverPersonal.Click += new System.EventHandler(this.BtnVolverPersonal_Click);
             // 
             // PanelBtnGuardarPersonal
             // 
-            this.PanelBtnGuardarPersonal.Controls.Add(this.btnGuardarPersonal);
-            this.PanelBtnGuardarPersonal.Controls.Add(this.btnGuardarCambiosPersonal);
+            this.PanelBtnGuardarPersonal.Controls.Add(this.BtnGuardarPersonal);
+            this.PanelBtnGuardarPersonal.Controls.Add(this.BtnGuardarCambiosPersonal);
             this.PanelBtnGuardarPersonal.Location = new System.Drawing.Point(219, 234);
             this.PanelBtnGuardarPersonal.Name = "PanelBtnGuardarPersonal";
             this.PanelBtnGuardarPersonal.Size = new System.Drawing.Size(229, 94);
             this.PanelBtnGuardarPersonal.TabIndex = 11;
             // 
-            // btnGuardarPersonal
+            // BtnGuardarPersonal
             // 
-            this.btnGuardarPersonal.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.verde;
-            this.btnGuardarPersonal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGuardarPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardarPersonal.FlatAppearance.BorderSize = 0;
-            this.btnGuardarPersonal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnGuardarPersonal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnGuardarPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarPersonal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGuardarPersonal.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarPersonal.Location = new System.Drawing.Point(3, 3);
-            this.btnGuardarPersonal.Name = "btnGuardarPersonal";
-            this.btnGuardarPersonal.Size = new System.Drawing.Size(100, 56);
-            this.btnGuardarPersonal.TabIndex = 0;
-            this.btnGuardarPersonal.Text = "Guardar";
-            this.btnGuardarPersonal.UseVisualStyleBackColor = true;
-            this.btnGuardarPersonal.Click += new System.EventHandler(this.btnGuardarPersonal_Click);
+            this.BtnGuardarPersonal.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.verde;
+            this.BtnGuardarPersonal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnGuardarPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnGuardarPersonal.FlatAppearance.BorderSize = 0;
+            this.BtnGuardarPersonal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnGuardarPersonal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnGuardarPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGuardarPersonal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnGuardarPersonal.ForeColor = System.Drawing.Color.White;
+            this.BtnGuardarPersonal.Location = new System.Drawing.Point(3, 3);
+            this.BtnGuardarPersonal.Name = "BtnGuardarPersonal";
+            this.BtnGuardarPersonal.Size = new System.Drawing.Size(100, 56);
+            this.BtnGuardarPersonal.TabIndex = 0;
+            this.BtnGuardarPersonal.Text = "Guardar";
+            this.BtnGuardarPersonal.UseVisualStyleBackColor = true;
+            this.BtnGuardarPersonal.Click += new System.EventHandler(this.BtnGuardarPersonal_Click);
             // 
-            // btnGuardarCambiosPersonal
+            // BtnGuardarCambiosPersonal
             // 
-            this.btnGuardarCambiosPersonal.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.verde;
-            this.btnGuardarCambiosPersonal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGuardarCambiosPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardarCambiosPersonal.FlatAppearance.BorderSize = 0;
-            this.btnGuardarCambiosPersonal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnGuardarCambiosPersonal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnGuardarCambiosPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarCambiosPersonal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGuardarCambiosPersonal.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarCambiosPersonal.Location = new System.Drawing.Point(109, 3);
-            this.btnGuardarCambiosPersonal.Name = "btnGuardarCambiosPersonal";
-            this.btnGuardarCambiosPersonal.Size = new System.Drawing.Size(100, 56);
-            this.btnGuardarCambiosPersonal.TabIndex = 1;
-            this.btnGuardarCambiosPersonal.Text = "Guardar*";
-            this.btnGuardarCambiosPersonal.UseVisualStyleBackColor = true;
+            this.BtnGuardarCambiosPersonal.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.verde;
+            this.BtnGuardarCambiosPersonal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnGuardarCambiosPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnGuardarCambiosPersonal.FlatAppearance.BorderSize = 0;
+            this.BtnGuardarCambiosPersonal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.BtnGuardarCambiosPersonal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.BtnGuardarCambiosPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnGuardarCambiosPersonal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnGuardarCambiosPersonal.ForeColor = System.Drawing.Color.White;
+            this.BtnGuardarCambiosPersonal.Location = new System.Drawing.Point(109, 3);
+            this.BtnGuardarCambiosPersonal.Name = "BtnGuardarCambiosPersonal";
+            this.BtnGuardarCambiosPersonal.Size = new System.Drawing.Size(100, 56);
+            this.BtnGuardarCambiosPersonal.TabIndex = 1;
+            this.BtnGuardarCambiosPersonal.Text = "Guardar*";
+            this.BtnGuardarCambiosPersonal.UseVisualStyleBackColor = true;
+            this.BtnGuardarCambiosPersonal.Click += new System.EventHandler(this.BtnGuardarCambiosPersonal_Click);
             // 
             // btnAgregarCargo
             // 
@@ -605,12 +596,13 @@ namespace Sistema_de_asistencias.Presentacion
             this.btnAgregarCargo.TabIndex = 10;
             this.btnAgregarCargo.Text = "+ Agregar cargo";
             this.btnAgregarCargo.UseVisualStyleBackColor = true;
-            this.btnAgregarCargo.Click += new System.EventHandler(this.btnAgregarCargo_Click);
+            this.btnAgregarCargo.Click += new System.EventHandler(this.BtnAgregarCargo_Click);
             // 
-            // cbxPais
+            // CbxPais
             // 
-            this.cbxPais.FormattingEnabled = true;
-            this.cbxPais.Items.AddRange(new object[] {
+            this.CbxPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CbxPais.FormattingEnabled = true;
+            this.CbxPais.Items.AddRange(new object[] {
             "Afganistan",
             "Albania",
             "Alemania",
@@ -806,10 +798,10 @@ namespace Sistema_de_asistencias.Presentacion
             "Yibuti",
             "Zambia",
             "Zimbabue"});
-            this.cbxPais.Location = new System.Drawing.Point(219, 117);
-            this.cbxPais.Name = "cbxPais";
-            this.cbxPais.Size = new System.Drawing.Size(242, 29);
-            this.cbxPais.TabIndex = 9;
+            this.CbxPais.Location = new System.Drawing.Point(219, 117);
+            this.CbxPais.Name = "CbxPais";
+            this.CbxPais.Size = new System.Drawing.Size(242, 29);
+            this.CbxPais.TabIndex = 9;
             // 
             // panel9
             // 
@@ -835,29 +827,30 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel6.Size = new System.Drawing.Size(283, 2);
             this.panel6.TabIndex = 6;
             // 
-            // txtSueldoHora
+            // TxtSueldoHora
             // 
-            this.txtSueldoHora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.txtSueldoHora.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSueldoHora.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtSueldoHora.ForeColor = System.Drawing.Color.White;
-            this.txtSueldoHora.Location = new System.Drawing.Point(219, 201);
-            this.txtSueldoHora.Name = "txtSueldoHora";
-            this.txtSueldoHora.Size = new System.Drawing.Size(198, 22);
-            this.txtSueldoHora.TabIndex = 7;
-            this.txtSueldoHora.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSueldoHora_KeyPress);
+            this.TxtSueldoHora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.TxtSueldoHora.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtSueldoHora.Enabled = false;
+            this.TxtSueldoHora.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtSueldoHora.ForeColor = System.Drawing.Color.White;
+            this.TxtSueldoHora.Location = new System.Drawing.Point(219, 201);
+            this.TxtSueldoHora.Name = "TxtSueldoHora";
+            this.TxtSueldoHora.Size = new System.Drawing.Size(198, 22);
+            this.TxtSueldoHora.TabIndex = 7;
+            this.TxtSueldoHora.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtSueldoHora_KeyPress);
             // 
-            // txtCargo
+            // TxtCargo
             // 
-            this.txtCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.txtCargo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCargo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtCargo.ForeColor = System.Drawing.Color.White;
-            this.txtCargo.Location = new System.Drawing.Point(219, 161);
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(283, 22);
-            this.txtCargo.TabIndex = 7;
-            this.txtCargo.TextChanged += new System.EventHandler(this.txtCargo_TextChanged);
+            this.TxtCargo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.TxtCargo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtCargo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtCargo.ForeColor = System.Drawing.Color.White;
+            this.TxtCargo.Location = new System.Drawing.Point(219, 161);
+            this.TxtCargo.Name = "TxtCargo";
+            this.TxtCargo.Size = new System.Drawing.Size(283, 22);
+            this.TxtCargo.TabIndex = 7;
+            this.TxtCargo.TextChanged += new System.EventHandler(this.TxtCargo_TextChanged);
             // 
             // panel5
             // 
@@ -867,27 +860,27 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel5.Size = new System.Drawing.Size(471, 2);
             this.panel5.TabIndex = 6;
             // 
-            // txtIdentificacion
+            // TxtIdentificacion
             // 
-            this.txtIdentificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.txtIdentificacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdentificacion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtIdentificacion.ForeColor = System.Drawing.Color.White;
-            this.txtIdentificacion.Location = new System.Drawing.Point(219, 78);
-            this.txtIdentificacion.Name = "txtIdentificacion";
-            this.txtIdentificacion.Size = new System.Drawing.Size(283, 22);
-            this.txtIdentificacion.TabIndex = 5;
+            this.TxtIdentificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.TxtIdentificacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtIdentificacion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtIdentificacion.ForeColor = System.Drawing.Color.White;
+            this.TxtIdentificacion.Location = new System.Drawing.Point(219, 78);
+            this.TxtIdentificacion.Name = "TxtIdentificacion";
+            this.TxtIdentificacion.Size = new System.Drawing.Size(283, 22);
+            this.TxtIdentificacion.TabIndex = 5;
             // 
-            // txtNombre
+            // TxtNombre
             // 
-            this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
-            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNombre.ForeColor = System.Drawing.Color.White;
-            this.txtNombre.Location = new System.Drawing.Point(219, 37);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(471, 22);
-            this.txtNombre.TabIndex = 5;
+            this.TxtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.TxtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtNombre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtNombre.ForeColor = System.Drawing.Color.White;
+            this.TxtNombre.Location = new System.Drawing.Point(219, 37);
+            this.TxtNombre.Name = "TxtNombre";
+            this.TxtNombre.Size = new System.Drawing.Size(471, 22);
+            this.TxtNombre.TabIndex = 5;
             // 
             // label5
             // 
@@ -939,29 +932,118 @@ namespace Sistema_de_asistencias.Presentacion
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombres y apellidos:";
             // 
+            // DataListadoPersonal
+            // 
+            this.DataListadoPersonal.AllowUserToAddRows = false;
+            this.DataListadoPersonal.AllowUserToDeleteRows = false;
+            this.DataListadoPersonal.AllowUserToResizeRows = false;
+            this.DataListadoPersonal.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.DataListadoPersonal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataListadoPersonal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataListadoPersonal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Eliminar,
+            this.Editar});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataListadoPersonal.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DataListadoPersonal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DataListadoPersonal.Location = new System.Drawing.Point(0, 80);
+            this.DataListadoPersonal.Name = "DataListadoPersonal";
+            this.DataListadoPersonal.ReadOnly = true;
+            this.DataListadoPersonal.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DataListadoPersonal.RowTemplate.Height = 40;
+            this.DataListadoPersonal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataListadoPersonal.Size = new System.Drawing.Size(1190, 411);
+            this.DataListadoPersonal.TabIndex = 2;
+            this.DataListadoPersonal.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListadoPersonal_CellClick);
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "";
+            this.Eliminar.Image = global::Sistema_de_asistencias.Properties.Resources.Eliminar;
+            this.Eliminar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            // 
+            // Editar
+            // 
+            this.Editar.HeaderText = "";
+            this.Editar.Image = global::Sistema_de_asistencias.Properties.Resources.editar;
+            this.Editar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Editar.Name = "Editar";
+            this.Editar.ReadOnly = true;
+            // 
+            // Timer1
+            // 
+            this.Timer1.Enabled = true;
+            this.Timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.BtnAgregar);
+            this.panel2.Controls.Add(this.panel12);
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(1107, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(83, 80);
+            this.panel2.TabIndex = 12;
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(73, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(10, 80);
+            this.panel4.TabIndex = 0;
+            // 
+            // panel7
+            // 
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(73, 10);
+            this.panel7.TabIndex = 1;
+            // 
+            // panel12
+            // 
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel12.Location = new System.Drawing.Point(0, 70);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(73, 10);
+            this.panel12.TabIndex = 2;
+            // 
             // Personal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.PanelRegistros);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DataListadoPersonal);
             this.Controls.Add(this.PanelPaginado);
             this.Controls.Add(this.panel1);
             this.Name = "Personal";
             this.Size = new System.Drawing.Size(1190, 571);
+            this.Load += new System.EventHandler(this.Personal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelPaginado.ResumeLayout(false);
             this.PanelPaginado.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.PanelRegistros.ResumeLayout(false);
             this.PanelRegistros.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataListadoCargos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataListadoCargos)).EndInit();
             this.PanelCargos.ResumeLayout(false);
             this.PanelCargos.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.PanelBtnGuardarPersonal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DataListadoPersonal)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -970,52 +1052,59 @@ namespace Sistema_de_asistencias.Presentacion
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel PanelPaginado;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtBuscador;
         private System.Windows.Forms.Panel PanelRegistros;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox TxtNombre;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblSueldo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox txtIdentificacion;
-        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.TextBox TxtIdentificacion;
+        private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.FlowLayoutPanel PanelBtnGuardarPersonal;
-        private System.Windows.Forms.Button btnGuardarPersonal;
+        private System.Windows.Forms.Button BtnGuardarPersonal;
         private System.Windows.Forms.Button btnAgregarCargo;
-        private System.Windows.Forms.ComboBox cbxPais;
+        private System.Windows.Forms.ComboBox CbxPais;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox txtSueldoHora;
-        private System.Windows.Forms.TextBox txtCargo;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox TxtSueldoHora;
+        private System.Windows.Forms.TextBox TxtCargo;
+        private System.Windows.Forms.Button BtnMostrarTodo;
+        private System.Windows.Forms.Button BtnUltimaPagina;
+        private System.Windows.Forms.Label LblTotalPaginas;
+        private System.Windows.Forms.Label LblPagina;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button BtnPrimerPagina;
+        private System.Windows.Forms.Button BtnAnterior;
+        private System.Windows.Forms.Button BtnSiguiente;
         private System.Windows.Forms.Panel PanelCargos;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Button btnGuardarCargo;
-        private System.Windows.Forms.Button btnGuardarCambiosCargo;
+        private System.Windows.Forms.Button BtnGuardarCargo;
+        private System.Windows.Forms.Button BtnGuardarCambiosCargo;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox txtSueldoHoraG;
-        private System.Windows.Forms.TextBox txtCargoG;
+        private System.Windows.Forms.TextBox TxtSueldoHoraG;
+        private System.Windows.Forms.TextBox TxtCargoG;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button btnVolverPersonal;
-        private System.Windows.Forms.Button btnGuardarCambiosPersonal;
-        private System.Windows.Forms.DataGridView dataListadoCargos;
+        private System.Windows.Forms.Button BtnVolverPersonal;
+        private System.Windows.Forms.Button BtnGuardarCambiosPersonal;
+        private System.Windows.Forms.DataGridView DataListadoCargos;
         private System.Windows.Forms.DataGridViewImageColumn EditarC;
-        private System.Windows.Forms.Button btnVolverCargos;
+        private System.Windows.Forms.Button BtnVolverCargos;
+        private System.Windows.Forms.DataGridView DataListadoPersonal;
+        private System.Windows.Forms.DataGridViewImageColumn Eliminar;
+        private System.Windows.Forms.DataGridViewImageColumn Editar;
+        private System.Windows.Forms.Timer Timer1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel4;
     }
 }

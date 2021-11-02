@@ -19,13 +19,18 @@ namespace Sistema_de_asistencias.Presentacion
         {
             panelBienvenida.Dock = DockStyle.Fill;
         }
-
-        private void btnPersonal_Click(object sender, EventArgs e)
+        // Se ejecuta el evento cuando se presiona el botón (+ azul), para agregar nuevo personal.
+        private void BtnPersonal_Click(object sender, EventArgs e)
         {
             // Limpiamos el panel principal
             PanelPrincipal.Controls.Clear();
-            Personal control = new Personal();
-            control.Dock = DockStyle.Fill;
+            // Instancia del elemento 'User Control' (NO formulario) para agregar Personal
+            Personal control = new Personal
+            {
+                // Ocupará todo el Panel
+                Dock = DockStyle.Fill
+            };
+            // Agrega el 'User Control' al panel principal
             PanelPrincipal.Controls.Add(control);
         }
     }

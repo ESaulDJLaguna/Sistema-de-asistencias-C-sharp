@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Sistema_de_asistencias.Logica
+﻿namespace Sistema_de_asistencias.Logica
 {
+    // Representa los campos de la tabla Personal en la base de datos
     public class LPersonal
     {
         public int Id_personal { set; get; }

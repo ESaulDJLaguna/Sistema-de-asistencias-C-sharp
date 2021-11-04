@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace Sistema_de_asistencias.Datos
 {
     // Clase que representa ("convierte" a C#) los procedimientos almacenados que manipulan la tabla Personal en la BD: Buscar, Editar, Eliminar, Insertar, Mostrar
-    public class DPersonal
+    public class DAsistencia
     {
         // Implementa el procedimiento almacenado que Inserta Personal en la Tabla Personal de la BD
         public bool InsertarPersonal(LPersonal parametros)
@@ -257,6 +257,37 @@ namespace Sistema_de_asistencias.Datos
             finally
             {
                 // Si está abierta la conexión a la BD y se ejecuta o no el procedimiento: ciérrala
+                CONEXIONMAESTRA.Cerrar();
+            }
+        }
+        // Método que busca un Personal solo por su Identificación
+        public void BuscarPersonalIdentidad(ref DataTable dt, string buscador)
+        {
+            // Protección del código. Evita que se obtenga la aplicación en caso de algún fallo
+            try
+            {
+                // Se abre la conexión al servidor
+                CONEXIONMAESTRA.Abrir();
+                // SqlDataAdapter REPRESENTA UN CONJUNTO DE COMANDOS DE DATOS Y UNA CONEXIÓN A UNA BD QUE SE USAN PARA RELLENAR DataSet Y ACTUALIZAR UNA BD DE SQL Server. EN SU MAYORÍA SE UTILIZA CUANDO QUEREMOS MOSTRAR INFORMACIÓN DE UNA BD
+                // Clase utilizada para mostrar (adaptar) información de una base de datos. Pasamos el procedimiento almacenado al que hará referencia y la conexión a la BD
+                SqlDataAdapter da = new SqlDataAdapter("BuscarPersonalIdentidad", CONEXIONMAESTRA.conectar);
+                // Indicamos que el procedimiento requiere de parámetros
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                // Pasamos los parámetros
+                da.SelectCommand.Parameters.AddWithValue("@Buscador", buscador);
+                // Pasamos los datos obtenidos por la consulta a una tabla (DataTable) que posteriormente se mostrará en un DataGridView
+                da.Fill(dt);
+            }
+            // Si hubo algún fallo al manipular la BD...
+            catch (Exception ex)
+            {
+                // ... muestra un mensaje de error. Como en SQL Server no tenemos un Raiserror, usamos un StackTrace
+                MessageBox.Show(ex.StackTrace);
+            }
+            // UN BLOQUE finally SIEMPRE SE EJECUTA, INDEPENDIENTEMENTE DE SI UNA EXCEPCIÓN FUE LANZADA O CAPTURADA
+            finally
+            {
+                // Si está abierta la conexión a la BD y se ejecutó o no el procedimiento: ciérrala
                 CONEXIONMAESTRA.Cerrar();
             }
         }

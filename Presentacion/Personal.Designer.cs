@@ -33,8 +33,12 @@ namespace Sistema_de_asistencias.Presentacion
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BtnMostrarTodo = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.BtnAgregar = new System.Windows.Forms.Button();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.BtnMostrarTodo = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.TxtBuscador = new System.Windows.Forms.TextBox();
@@ -84,11 +88,8 @@ namespace Sistema_de_asistencias.Presentacion
             this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
             this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
             this.Timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelPaginado.SuspendLayout();
             this.PanelRegistros.SuspendLayout();
@@ -97,7 +98,6 @@ namespace Sistema_de_asistencias.Presentacion
             this.flowLayoutPanel2.SuspendLayout();
             this.PanelBtnGuardarPersonal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataListadoPersonal)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -114,20 +114,17 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel1.Size = new System.Drawing.Size(1190, 80);
             this.panel1.TabIndex = 0;
             // 
-            // BtnMostrarTodo
+            // panel2
             // 
-            this.BtnMostrarTodo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMostrarTodo.FlatAppearance.BorderSize = 0;
-            this.BtnMostrarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMostrarTodo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnMostrarTodo.ForeColor = System.Drawing.Color.White;
-            this.BtnMostrarTodo.Location = new System.Drawing.Point(463, 21);
-            this.BtnMostrarTodo.Name = "BtnMostrarTodo";
-            this.BtnMostrarTodo.Size = new System.Drawing.Size(153, 40);
-            this.BtnMostrarTodo.TabIndex = 11;
-            this.BtnMostrarTodo.Text = "Mostrar todos";
-            this.BtnMostrarTodo.UseVisualStyleBackColor = true;
-            this.BtnMostrarTodo.Click += new System.EventHandler(this.BtnMostrarTodo_Click);
+            this.panel2.Controls.Add(this.BtnAgregar);
+            this.panel2.Controls.Add(this.panel12);
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(1107, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(83, 80);
+            this.panel2.TabIndex = 12;
             // 
             // BtnAgregar
             // 
@@ -144,6 +141,45 @@ namespace Sistema_de_asistencias.Presentacion
             this.BtnAgregar.TabIndex = 3;
             this.BtnAgregar.UseVisualStyleBackColor = false;
             this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
+            // 
+            // panel12
+            // 
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel12.Location = new System.Drawing.Point(0, 70);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(73, 10);
+            this.panel12.TabIndex = 2;
+            // 
+            // panel7
+            // 
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(73, 10);
+            this.panel7.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(73, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(10, 80);
+            this.panel4.TabIndex = 0;
+            // 
+            // BtnMostrarTodo
+            // 
+            this.BtnMostrarTodo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMostrarTodo.FlatAppearance.BorderSize = 0;
+            this.BtnMostrarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMostrarTodo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnMostrarTodo.ForeColor = System.Drawing.Color.White;
+            this.BtnMostrarTodo.Location = new System.Drawing.Point(463, 21);
+            this.BtnMostrarTodo.Name = "BtnMostrarTodo";
+            this.BtnMostrarTodo.Size = new System.Drawing.Size(153, 40);
+            this.BtnMostrarTodo.TabIndex = 11;
+            this.BtnMostrarTodo.Text = "Mostrar todos";
+            this.BtnMostrarTodo.UseVisualStyleBackColor = true;
+            this.BtnMostrarTodo.Click += new System.EventHandler(this.BtnMostrarTodo_Click);
             // 
             // pictureBox1
             // 
@@ -603,6 +639,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.CbxPais.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbxPais.FormattingEnabled = true;
             this.CbxPais.Items.AddRange(new object[] {
+            "",
             "Afganistan",
             "Albania",
             "Alemania",
@@ -983,42 +1020,6 @@ namespace Sistema_de_asistencias.Presentacion
             this.Timer1.Enabled = true;
             this.Timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.BtnAgregar);
-            this.panel2.Controls.Add(this.panel12);
-            this.panel2.Controls.Add(this.panel7);
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1107, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(83, 80);
-            this.panel2.TabIndex = 12;
-            // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(73, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 80);
-            this.panel4.TabIndex = 0;
-            // 
-            // panel7
-            // 
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(73, 10);
-            this.panel7.TabIndex = 1;
-            // 
-            // panel12
-            // 
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel12.Location = new System.Drawing.Point(0, 70);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(73, 10);
-            this.panel12.TabIndex = 2;
-            // 
             // Personal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1032,6 +1033,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.Load += new System.EventHandler(this.Personal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelPaginado.ResumeLayout(false);
             this.PanelPaginado.PerformLayout();
@@ -1043,7 +1045,6 @@ namespace Sistema_de_asistencias.Presentacion
             this.flowLayoutPanel2.ResumeLayout(false);
             this.PanelBtnGuardarPersonal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataListadoPersonal)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

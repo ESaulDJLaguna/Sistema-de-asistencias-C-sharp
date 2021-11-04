@@ -18,7 +18,8 @@ namespace Sistema_de_asistencias
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Qué pantalla se mostrará al inicio de la aplicación
-            Application.Run(new Presentacion.MenuPrincipal());
+            Application.Run(new Presentacion.TomarAsistencias());
+            //Application.Run(new Presentacion.MenuPrincipal());
         }
     }
 }

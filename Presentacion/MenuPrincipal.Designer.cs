@@ -36,28 +36,28 @@ namespace Sistema_de_asistencias.Presentacion
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.btnEstaciones = new System.Windows.Forms.Button();
+            this.BtnEstaciones = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.btnRespaldos = new System.Windows.Forms.Button();
+            this.BtnRespaldos = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.btnRestaurarBD = new System.Windows.Forms.Button();
+            this.BtnRestaurarBD = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.BtnUsuarios = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnRegistro = new System.Windows.Forms.Button();
+            this.BtnRegistro = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.btnPersonal = new System.Windows.Forms.Button();
-            this.btnConsultas = new System.Windows.Forms.Button();
+            this.BtnPersonal = new System.Windows.Forms.Button();
+            this.BtnConsultas = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -85,8 +85,8 @@ namespace Sistema_de_asistencias.Presentacion
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.btnPersonal);
-            this.panel1.Controls.Add(this.btnConsultas);
+            this.panel1.Controls.Add(this.BtnPersonal);
+            this.panel1.Controls.Add(this.BtnConsultas);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -152,7 +152,7 @@ namespace Sistema_de_asistencias.Presentacion
             // 
             // panel18
             // 
-            this.panel18.Controls.Add(this.btnEstaciones);
+            this.panel18.Controls.Add(this.BtnEstaciones);
             this.panel18.Controls.Add(this.panel21);
             this.panel18.Controls.Add(this.panel19);
             this.panel18.Controls.Add(this.panel20);
@@ -162,26 +162,26 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel18.Size = new System.Drawing.Size(191, 50);
             this.panel18.TabIndex = 5;
             // 
-            // btnEstaciones
+            // BtnEstaciones
             // 
-            this.btnEstaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.btnEstaciones.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.naranja;
-            this.btnEstaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEstaciones.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEstaciones.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEstaciones.FlatAppearance.BorderSize = 0;
-            this.btnEstaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEstaciones.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnEstaciones.ForeColor = System.Drawing.Color.White;
-            this.btnEstaciones.Image = global::Sistema_de_asistencias.Properties.Resources.estaciones;
-            this.btnEstaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstaciones.Location = new System.Drawing.Point(10, 10);
-            this.btnEstaciones.Name = "btnEstaciones";
-            this.btnEstaciones.Size = new System.Drawing.Size(171, 40);
-            this.btnEstaciones.TabIndex = 3;
-            this.btnEstaciones.Text = "Estaciones";
-            this.btnEstaciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEstaciones.UseVisualStyleBackColor = false;
+            this.BtnEstaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.BtnEstaciones.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.naranja;
+            this.BtnEstaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnEstaciones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnEstaciones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnEstaciones.FlatAppearance.BorderSize = 0;
+            this.BtnEstaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEstaciones.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnEstaciones.ForeColor = System.Drawing.Color.White;
+            this.BtnEstaciones.Image = global::Sistema_de_asistencias.Properties.Resources.estaciones;
+            this.BtnEstaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnEstaciones.Location = new System.Drawing.Point(10, 10);
+            this.BtnEstaciones.Name = "BtnEstaciones";
+            this.BtnEstaciones.Size = new System.Drawing.Size(171, 40);
+            this.BtnEstaciones.TabIndex = 3;
+            this.BtnEstaciones.Text = "Estaciones";
+            this.BtnEstaciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnEstaciones.UseVisualStyleBackColor = false;
             // 
             // panel21
             // 
@@ -209,7 +209,7 @@ namespace Sistema_de_asistencias.Presentacion
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.btnRespaldos);
+            this.panel14.Controls.Add(this.BtnRespaldos);
             this.panel14.Controls.Add(this.panel15);
             this.panel14.Controls.Add(this.panel16);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
@@ -218,24 +218,24 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel14.Size = new System.Drawing.Size(191, 50);
             this.panel14.TabIndex = 3;
             // 
-            // btnRespaldos
+            // BtnRespaldos
             // 
-            this.btnRespaldos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.btnRespaldos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRespaldos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRespaldos.FlatAppearance.BorderSize = 0;
-            this.btnRespaldos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRespaldos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRespaldos.ForeColor = System.Drawing.Color.White;
-            this.btnRespaldos.Image = global::Sistema_de_asistencias.Properties.Resources.copia_de_seguridad_de_archivos;
-            this.btnRespaldos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRespaldos.Location = new System.Drawing.Point(10, 10);
-            this.btnRespaldos.Name = "btnRespaldos";
-            this.btnRespaldos.Size = new System.Drawing.Size(181, 40);
-            this.btnRespaldos.TabIndex = 3;
-            this.btnRespaldos.Text = "Respaldos";
-            this.btnRespaldos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRespaldos.UseVisualStyleBackColor = false;
+            this.BtnRespaldos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.BtnRespaldos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnRespaldos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnRespaldos.FlatAppearance.BorderSize = 0;
+            this.BtnRespaldos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRespaldos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnRespaldos.ForeColor = System.Drawing.Color.White;
+            this.BtnRespaldos.Image = global::Sistema_de_asistencias.Properties.Resources.copia_de_seguridad_de_archivos;
+            this.BtnRespaldos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnRespaldos.Location = new System.Drawing.Point(10, 10);
+            this.BtnRespaldos.Name = "BtnRespaldos";
+            this.BtnRespaldos.Size = new System.Drawing.Size(181, 40);
+            this.BtnRespaldos.TabIndex = 3;
+            this.BtnRespaldos.Text = "Respaldos";
+            this.BtnRespaldos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnRespaldos.UseVisualStyleBackColor = false;
             // 
             // panel15
             // 
@@ -255,7 +255,7 @@ namespace Sistema_de_asistencias.Presentacion
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.btnRestaurarBD);
+            this.panel11.Controls.Add(this.BtnRestaurarBD);
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.panel13);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
@@ -264,24 +264,24 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel11.Size = new System.Drawing.Size(191, 50);
             this.panel11.TabIndex = 2;
             // 
-            // btnRestaurarBD
+            // BtnRestaurarBD
             // 
-            this.btnRestaurarBD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.btnRestaurarBD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurarBD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRestaurarBD.FlatAppearance.BorderSize = 0;
-            this.btnRestaurarBD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestaurarBD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRestaurarBD.ForeColor = System.Drawing.Color.White;
-            this.btnRestaurarBD.Image = global::Sistema_de_asistencias.Properties.Resources.base_de_datos;
-            this.btnRestaurarBD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRestaurarBD.Location = new System.Drawing.Point(10, 10);
-            this.btnRestaurarBD.Name = "btnRestaurarBD";
-            this.btnRestaurarBD.Size = new System.Drawing.Size(181, 40);
-            this.btnRestaurarBD.TabIndex = 3;
-            this.btnRestaurarBD.Text = "Restarurar BBDD";
-            this.btnRestaurarBD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRestaurarBD.UseVisualStyleBackColor = false;
+            this.BtnRestaurarBD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.BtnRestaurarBD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnRestaurarBD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnRestaurarBD.FlatAppearance.BorderSize = 0;
+            this.BtnRestaurarBD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRestaurarBD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnRestaurarBD.ForeColor = System.Drawing.Color.White;
+            this.BtnRestaurarBD.Image = global::Sistema_de_asistencias.Properties.Resources.base_de_datos;
+            this.BtnRestaurarBD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnRestaurarBD.Location = new System.Drawing.Point(10, 10);
+            this.BtnRestaurarBD.Name = "BtnRestaurarBD";
+            this.BtnRestaurarBD.Size = new System.Drawing.Size(181, 40);
+            this.BtnRestaurarBD.TabIndex = 3;
+            this.BtnRestaurarBD.Text = "Restarurar BBDD";
+            this.BtnRestaurarBD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnRestaurarBD.UseVisualStyleBackColor = false;
             // 
             // panel12
             // 
@@ -301,7 +301,7 @@ namespace Sistema_de_asistencias.Presentacion
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.btnUsuarios);
+            this.panel8.Controls.Add(this.BtnUsuarios);
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Controls.Add(this.panel10);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
@@ -310,24 +310,25 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel8.Size = new System.Drawing.Size(191, 50);
             this.panel8.TabIndex = 1;
             // 
-            // btnUsuarios
+            // BtnUsuarios
             // 
-            this.btnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.btnUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnUsuarios.FlatAppearance.BorderSize = 0;
-            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuarios.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUsuarios.ForeColor = System.Drawing.Color.White;
-            this.btnUsuarios.Image = global::Sistema_de_asistencias.Properties.Resources.usuario;
-            this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuarios.Location = new System.Drawing.Point(10, 10);
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(181, 40);
-            this.btnUsuarios.TabIndex = 3;
-            this.btnUsuarios.Text = "Usuarios";
-            this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.BtnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.BtnUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnUsuarios.FlatAppearance.BorderSize = 0;
+            this.BtnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUsuarios.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnUsuarios.ForeColor = System.Drawing.Color.White;
+            this.BtnUsuarios.Image = global::Sistema_de_asistencias.Properties.Resources.usuario;
+            this.BtnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnUsuarios.Location = new System.Drawing.Point(10, 10);
+            this.BtnUsuarios.Name = "BtnUsuarios";
+            this.BtnUsuarios.Size = new System.Drawing.Size(181, 40);
+            this.BtnUsuarios.TabIndex = 3;
+            this.BtnUsuarios.Text = "Usuarios";
+            this.BtnUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnUsuarios.UseVisualStyleBackColor = false;
+            this.BtnUsuarios.Click += new System.EventHandler(this.BtnUsuarios_Click);
             // 
             // panel9
             // 
@@ -347,7 +348,7 @@ namespace Sistema_de_asistencias.Presentacion
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.btnRegistro);
+            this.panel5.Controls.Add(this.BtnRegistro);
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -356,24 +357,24 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel5.Size = new System.Drawing.Size(191, 50);
             this.panel5.TabIndex = 0;
             // 
-            // btnRegistro
+            // BtnRegistro
             // 
-            this.btnRegistro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.btnRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRegistro.FlatAppearance.BorderSize = 0;
-            this.btnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRegistro.ForeColor = System.Drawing.Color.White;
-            this.btnRegistro.Image = global::Sistema_de_asistencias.Properties.Resources.reloj_despertador_digital;
-            this.btnRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistro.Location = new System.Drawing.Point(10, 10);
-            this.btnRegistro.Name = "btnRegistro";
-            this.btnRegistro.Size = new System.Drawing.Size(181, 40);
-            this.btnRegistro.TabIndex = 3;
-            this.btnRegistro.Text = "Registro";
-            this.btnRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRegistro.UseVisualStyleBackColor = false;
+            this.BtnRegistro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.BtnRegistro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnRegistro.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnRegistro.FlatAppearance.BorderSize = 0;
+            this.BtnRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRegistro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnRegistro.ForeColor = System.Drawing.Color.White;
+            this.BtnRegistro.Image = global::Sistema_de_asistencias.Properties.Resources.reloj_despertador_digital;
+            this.BtnRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnRegistro.Location = new System.Drawing.Point(10, 10);
+            this.BtnRegistro.Name = "BtnRegistro";
+            this.BtnRegistro.Size = new System.Drawing.Size(181, 40);
+            this.BtnRegistro.TabIndex = 3;
+            this.BtnRegistro.Text = "Registro";
+            this.BtnRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnRegistro.UseVisualStyleBackColor = false;
             // 
             // panel7
             // 
@@ -391,38 +392,38 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel6.Size = new System.Drawing.Size(191, 10);
             this.panel6.TabIndex = 0;
             // 
-            // btnPersonal
+            // BtnPersonal
             // 
-            this.btnPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.btnPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPersonal.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPersonal.FlatAppearance.BorderSize = 0;
-            this.btnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPersonal.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnPersonal.ForeColor = System.Drawing.Color.White;
-            this.btnPersonal.Location = new System.Drawing.Point(0, 116);
-            this.btnPersonal.Name = "btnPersonal";
-            this.btnPersonal.Size = new System.Drawing.Size(191, 50);
-            this.btnPersonal.TabIndex = 2;
-            this.btnPersonal.Text = "Personal";
-            this.btnPersonal.UseVisualStyleBackColor = false;
-            this.btnPersonal.Click += new System.EventHandler(this.BtnPersonal_Click);
+            this.BtnPersonal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.BtnPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnPersonal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnPersonal.FlatAppearance.BorderSize = 0;
+            this.BtnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPersonal.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnPersonal.ForeColor = System.Drawing.Color.White;
+            this.BtnPersonal.Location = new System.Drawing.Point(0, 116);
+            this.BtnPersonal.Name = "BtnPersonal";
+            this.BtnPersonal.Size = new System.Drawing.Size(191, 50);
+            this.BtnPersonal.TabIndex = 2;
+            this.BtnPersonal.Text = "Personal";
+            this.BtnPersonal.UseVisualStyleBackColor = false;
+            this.BtnPersonal.Click += new System.EventHandler(this.BtnPersonal_Click);
             // 
-            // btnConsultas
+            // BtnConsultas
             // 
-            this.btnConsultas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.btnConsultas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConsultas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConsultas.FlatAppearance.BorderSize = 0;
-            this.btnConsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultas.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnConsultas.ForeColor = System.Drawing.Color.White;
-            this.btnConsultas.Location = new System.Drawing.Point(0, 66);
-            this.btnConsultas.Name = "btnConsultas";
-            this.btnConsultas.Size = new System.Drawing.Size(191, 50);
-            this.btnConsultas.TabIndex = 1;
-            this.btnConsultas.Text = "Pre planilla";
-            this.btnConsultas.UseVisualStyleBackColor = false;
+            this.BtnConsultas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
+            this.BtnConsultas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnConsultas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnConsultas.FlatAppearance.BorderSize = 0;
+            this.BtnConsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnConsultas.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnConsultas.ForeColor = System.Drawing.Color.White;
+            this.BtnConsultas.Location = new System.Drawing.Point(0, 66);
+            this.BtnConsultas.Name = "BtnConsultas";
+            this.BtnConsultas.Size = new System.Drawing.Size(191, 50);
+            this.BtnConsultas.TabIndex = 1;
+            this.BtnConsultas.Text = "Pre planilla";
+            this.BtnConsultas.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -528,29 +529,29 @@ namespace Sistema_de_asistencias.Presentacion
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnConsultas;
+        private System.Windows.Forms.Button BtnConsultas;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel PanelPrincipal;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnPersonal;
+        private System.Windows.Forms.Button BtnPersonal;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btnRegistro;
+        private System.Windows.Forms.Button BtnRegistro;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Button btnRespaldos;
+        private System.Windows.Forms.Button BtnRespaldos;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Button btnRestaurarBD;
+        private System.Windows.Forms.Button BtnRestaurarBD;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button btnUsuarios;
+        private System.Windows.Forms.Button BtnUsuarios;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Button btnEstaciones;
+        private System.Windows.Forms.Button BtnEstaciones;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Panel panel17;

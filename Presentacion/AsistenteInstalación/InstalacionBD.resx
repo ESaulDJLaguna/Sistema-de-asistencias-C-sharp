@@ -1,0 +1,780 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>;SQL Server 2014 Configuration File
+[OPTIONS]
+
+
+
+; Especifica un flujo de trabajo de instalación, como INSTALL, UNINSTALL o UPGRADE. Es un parámetro necesario. 
+
+ACTION="Install"
+
+; No se ha definido aún ayuda detallada para el argumento de la línea de comandos ROLE. 
+
+ROLE="AllFeatures_WithDefaults"
+
+; Use el parámetro /ENU para instalar la versión en inglés de SQL Server en el sistema operativo Windows traducido. 
+
+ENU="False"
+
+; Parámetro que controla el comportamiento de la interfaz de usuario. Los valores válidos son Normal para la interfaz de usuario completa, AutoAdvance para una interfaz de usuario simplificada y EnableUIOnServerCore para omitir la parte gráfica de la instalación de Server Core. 
+
+
+; La instalación no mostrará ninguna interfaz de usuario. 
+
+QUIET="False"
+
+; El programa de instalación sólo mostrará el progreso, sin la interacción del usuario. 
+
+QUIETSIMPLE="True"
+
+; Especifique si el programa de instalación de SQL Server debe detectar e incluir actualizaciones del producto. Los valores válidos son True y False o 1 y 0. De forma predeterminada, el programa de instalación de SQL Server incluirá las actualizaciones que encuentre. 
+
+UpdateEnabled="False"
+
+; Especifique si se puede informar de los errores a Microsoft para mejorar las futuras versiones de SQL Server. Elija 1 o True para habilitar esta característica, o bien 0 o False para deshabilitarla. 
+
+ERRORREPORTING="False"
+
+; Si se proporciona este parámetro, el equipo usará Microsoft Update para comprobar las actualizaciones. 
+
+USEMICROSOFTUPDATE="False"
+
+; Especifica las características que se van a instalar, desinstalar o actualizar. La lista de las características de nivel superior incluye SQL, AS, RS, IS, MDS y Herramientas. La característica SQL instalará el motor de base de datos, la replicación, el texto completo y el servidor Data Quality Services (DQS). La característica Herramientas instalará las herramientas de administración, los componentes de Libros en pantalla, SQL Server Data Tools y el resto de los componentes compartidos. 
+
+FEATURES=SQLENGINE,REPLICATION
+
+; Especifique la ubicación en la que el programa de instalación de SQL Server obtendrá actualizaciones del producto. Los valores válidos son "MU" para buscar en Microsoft Update, una ruta de acceso de carpeta válida, una ruta de acceso relativa, como .\MisActualizaciones, o un recurso compartido UNC. De forma predeterminada, el programa de instalación de SQL Server buscará en Microsoft Update o en el servicio Windows Update mediante Windows Server Update Services. 
+
+UpdateSource="MU"
+
+; Muestra el uso de los parámetros de la línea de comandos 
+
+HELP="False"
+
+; Especifica que el registro de instalación detallado debe redireccionarse a la consola. 
+
+INDICATEPROGRESS="False"
+
+; Especifica que el programa de instalación debe realizar la instalación en WOW64. Este argumento de la línea de comandos no se admite en sistemas IA64 ni de 32 bits. 
+
+X86="False"
+
+; Especifique el directorio de instalación raíz de los componentes compartidos. Este directorio no cambia después de instalar los componentes compartidos. 
+
+INSTALLSHAREDDIR="C:\Program Files\Microsoft SQL Server"
+
+; Especifique una instancia predeterminada o con nombre. MSSQLSERVER y SQLExpress son las instancias predeterminadas de las ediciones que no son Express y de las Express, respectivamente. Se requiere este parámetro al instalar el motor de base de datos de SQL Server (SQL), Analysis Services (AS) o Reporting Services (RS). 
+
+INSTANCENAME="PRUEBAFINAL22"
+
+; Especifique si los datos de uso de las características de SQL Server se pueden recopilar y enviar a Microsoft. Elija 1 o True para habilitar esta característica, o bien 0 o False para deshabilitarla. 
+
+SQMREPORTING="False"
+
+; Especifique el identificador de instancia de las características de SQL Server que ha indicado. Las estructuras de directorios y del Registro, así como los nombres de los servicios SQL Server incorporarán el identificador de instancia de SQL Server. 
+
+INSTANCEID="PRUEBAFINAL22"
+
+; Especifique el directorio de instalación. 
+
+INSTANCEDIR="C:\Program Files (x86)\Microsoft SQL Server"
+
+; Nombre de cuenta del Agente 
+
+AGTSVCACCOUNT="NT AUTHORITY\Servicio de red"
+
+; Iniciar servicio automáticamente después de la instalación.  
+
+AGTSVCSTARTUPTYPE="Disabled"
+
+; Puerto de comunicación TCP del brick de CM 
+
+COMMFABRICPORT="0"
+
+; Cómo usará la matriz las redes privadas 
+
+COMMFABRICNETWORKLEVEL="0"
+
+; Cómo se protegerá la comunicación entre bricks 
+
+COMMFABRICENCRYPTION="0"
+
+; Puerto TCP usado por el brick de CM 
+
+MATRIXCMBRICKCOMMPORT="0"
+
+; Tipo de inicio para el servicio SQL Server. 
+
+SQLSVCSTARTUPTYPE="Automatic"
+
+; Nivel para habilitar la característica FILESTREAM en (0, 1, 2 o 3). 
+
+FILESTREAMLEVEL="0"
+
+; Establézcalo en "1" para habilitar RANU para SQL Server Express. 
+
+ENABLERANU="True"
+
+; Especifica una intercalación de Windows o SQL que se va a utilizar para el motor de base de datos. 
+
+SQLCOLLATION="Modern_Spanish_CI_AS"
+
+; Cuenta para el servicio de SQL Server: Dominio\Usuario o cuenta de sistema. 
+
+SQLSVCACCOUNT="NT Service\MSSQL$PRUEBAFINAL22"
+
+; Cuentas de Windows que se suministran como administradores del sistema de SQL Server. 
+
+
+; Autenticación de Windows predeterminada. Use "SQL" para el modo mixto de autenticación de Windows. 
+
+
+; Aprovisione el usuario actual como administrador del sistema del motor de base de datos para %SQL_PRODUCT_SHORT_NAME% Express. 
+
+ADDCURRENTUSERASSQLADMIN="False"
+
+; Especifique 0 para deshabilitar el protocolo TCP/IP, o 1 para habilitarlo. 
+
+TCPENABLED="1"
+
+; Especifique 0 para deshabilitar el protocolo Named Pipes, o 1 para habilitarlo. 
+
+NPENABLED="0"
+
+; Tipo de inicio para el servicio SQL Server Browser. 
+
+BROWSERSVCSTARTUPTYPE="Disabled"
+</value>
+  </data>
+  <data name="richTextBox4.Text" xml:space="preserve">
+    <value>CREATE LOGIN ada369 WITH PASSWORD = 'softwarereal'
+GO
+Use BASEADA ;
+GO
+IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = N'ada369')
+BEGIN
+    CREATE USER [ada369] FOR LOGIN [ada369]
+    EXEC sp_addrolemember N'db_owner', N'ada369'
+    EXEC master..sp_addsrvrolemember @loginame = N'ada369', @rolename = N'sysadmin'
+END;
+GO</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>USE [master]
+GO
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [ORUS369].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE [ORUS369] SET ANSI_NULL_DEFAULT OFF 
+GO
+ALTER DATABASE [ORUS369] SET ANSI_NULLS OFF 
+GO
+ALTER DATABASE [ORUS369] SET ANSI_PADDING OFF 
+GO
+ALTER DATABASE [ORUS369] SET ANSI_WARNINGS OFF 
+GO
+ALTER DATABASE [ORUS369] SET ARITHABORT OFF 
+GO
+ALTER DATABASE [ORUS369] SET AUTO_CLOSE OFF 
+GO
+ALTER DATABASE [ORUS369] SET AUTO_SHRINK OFF 
+GO
+ALTER DATABASE [ORUS369] SET AUTO_UPDATE_STATISTICS ON 
+GO
+ALTER DATABASE [ORUS369] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+ALTER DATABASE [ORUS369] SET CURSOR_DEFAULT  GLOBAL 
+GO
+ALTER DATABASE [ORUS369] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+ALTER DATABASE [ORUS369] SET NUMERIC_ROUNDABORT OFF 
+GO
+ALTER DATABASE [ORUS369] SET QUOTED_IDENTIFIER OFF 
+GO
+ALTER DATABASE [ORUS369] SET RECURSIVE_TRIGGERS OFF 
+GO
+ALTER DATABASE [ORUS369] SET  DISABLE_BROKER 
+GO
+ALTER DATABASE [ORUS369] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+ALTER DATABASE [ORUS369] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+ALTER DATABASE [ORUS369] SET TRUSTWORTHY OFF 
+GO
+ALTER DATABASE [ORUS369] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+ALTER DATABASE [ORUS369] SET PARAMETERIZATION SIMPLE 
+GO
+ALTER DATABASE [ORUS369] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+ALTER DATABASE [ORUS369] SET HONOR_BROKER_PRIORITY OFF 
+GO
+ALTER DATABASE [ORUS369] SET RECOVERY FULL 
+GO
+ALTER DATABASE [ORUS369] SET  MULTI_USER 
+GO
+ALTER DATABASE [ORUS369] SET PAGE_VERIFY CHECKSUM  
+GO
+ALTER DATABASE [ORUS369] SET DB_CHAINING OFF 
+GO
+ALTER DATABASE [ORUS369] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+ALTER DATABASE [ORUS369] SET TARGET_RECOVERY_TIME = 60 SECONDS 
+GO
+ALTER DATABASE [ORUS369] SET DELAYED_DURABILITY = DISABLED 
+GO
+ALTER DATABASE [ORUS369] SET ACCELERATED_DATABASE_RECOVERY = OFF  
+GO
+EXEC sys.sp_db_vardecimal_storage_format N'ORUS369', N'ON'
+GO
+ALTER DATABASE [ORUS369] SET QUERY_STORE = OFF
+GO
+USE [ORUS369]
+GO
+/****** Object:  Table [dbo].[Asistencias]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Asistencias](
+	[id_asistencias] [int] IDENTITY(1,1) NOT NULL,
+	[id_personal] [int] NULL,
+	[fecha_entrada] [datetime] NULL,
+	[fecha_salida] [datetime] NULL,
+	[estado] [varchar](50) NULL,
+	[horas] [numeric](18, 2) NULL,
+	[observación] [varchar](max) NULL,
+ CONSTRAINT [PK_Asistencias] PRIMARY KEY CLUSTERED 
+(
+	[id_asistencias] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Cargo]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Cargo](
+	[id_cargo] [int] IDENTITY(1,1) NOT NULL,
+	[Cargo] [varchar](max) NULL,
+	[SueldoPorHora] [decimal](18, 2) NULL,
+ CONSTRAINT [PK_Cargo] PRIMARY KEY CLUSTERED 
+(
+	[id_cargo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Modulos]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Modulos](
+	[IdModulo] [int] IDENTITY(1,1) NOT NULL,
+	[Modulo] [varchar](max) NULL,
+ CONSTRAINT [PK_Modulos] PRIMARY KEY CLUSTERED 
+(
+	[IdModulo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Permisos]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Permisos](
+	[idPermisos] [int] IDENTITY(1,1) NOT NULL,
+	[idModulo] [int] NULL,
+	[idUsuario] [int] NULL,
+ CONSTRAINT [PK_Permisos] PRIMARY KEY CLUSTERED 
+(
+	[idPermisos] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Personal]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Personal](
+	[id_personal] [int] IDENTITY(1,1) NOT NULL,
+	[Nombres] [varchar](max) NULL,
+	[Identificación] [varchar](max) NULL,
+	[País] [varchar](max) NULL,
+	[id_cargo] [int] NULL,
+	[SueldoPorHora] [numeric](18, 2) NULL,
+	[Estado] [varchar](max) NULL,
+	[codigo] [varchar](max) NULL,
+ CONSTRAINT [PK_Personal] PRIMARY KEY CLUSTERED 
+(
+	[id_personal] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Usuarios]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Usuarios](
+	[IdUsuario] [int] IDENTITY(1,1) NOT NULL,
+	[NombresApellidos] [varchar](50) NULL,
+	[Login] [varchar](50) NULL,
+	[Password] [varchar](50) NULL,
+	[Icono] [image] NULL,
+	[Estado] [varchar](50) NULL,
+ CONSTRAINT [PK_Usuarios] PRIMARY KEY CLUSTERED 
+(
+	[IdUsuario] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Asistencias]  WITH CHECK ADD  CONSTRAINT [FK_Asistencias_Personal] FOREIGN KEY([id_personal])
+REFERENCES [dbo].[Personal] ([id_personal])
+GO
+ALTER TABLE [dbo].[Asistencias] CHECK CONSTRAINT [FK_Asistencias_Personal]
+GO
+ALTER TABLE [dbo].[Permisos]  WITH CHECK ADD  CONSTRAINT [FK_Permisos_Modulos] FOREIGN KEY([idModulo])
+REFERENCES [dbo].[Modulos] ([IdModulo])
+GO
+ALTER TABLE [dbo].[Permisos] CHECK CONSTRAINT [FK_Permisos_Modulos]
+GO
+ALTER TABLE [dbo].[Permisos]  WITH CHECK ADD  CONSTRAINT [FK_Permisos_Usuarios] FOREIGN KEY([idUsuario])
+REFERENCES [dbo].[Usuarios] ([IdUsuario])
+GO
+ALTER TABLE [dbo].[Permisos] CHECK CONSTRAINT [FK_Permisos_Usuarios]
+GO
+ALTER TABLE [dbo].[Personal]  WITH CHECK ADD  CONSTRAINT [FK_Personal_Cargo] FOREIGN KEY([id_cargo])
+REFERENCES [dbo].[Cargo] ([id_cargo])
+GO
+ALTER TABLE [dbo].[Personal] CHECK CONSTRAINT [FK_Personal_Cargo]
+GO
+/****** Object:  StoredProcedure [dbo].[BuscarAsistenciasPorId]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[BuscarAsistenciasPorId]
+	@id_personal INT
+AS
+SELECT * FROM Asistencias
+WHERE id_personal = @id_personal AND Asistencias.estado = 'ENTRADA'
+GO
+/****** Object:  StoredProcedure [dbo].[BuscarCargos]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[BuscarCargos]
+@Buscador varchar(50)
+AS
+SELECT id_cargo, Cargo, SueldoPorHora AS [Sueldo Por Hora] FROM Cargo WHERE Cargo LIKE '%' + @Buscador + '%'
+GO
+/****** Object:  StoredProcedure [dbo].[BuscarPersonal]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[BuscarPersonal]
+	@Buscador varchar(50)
+AS
+SET Nocount ON;
+SELECT
+	id_personal,
+	Nombres,
+	Identificación,
+	SueldoPorHora,
+	Cargo,
+	id_cargo,
+	Estado,
+	codigo,
+	País
+FROM
+	(SELECT
+		id_personal,
+		Nombres,
+		Identificación,
+		Personal.SueldoPorHora,
+		Cargo.Cargo,
+		Personal.id_cargo,
+		Estado,
+		codigo,
+		País
+	FROM
+		Personal
+	INNER JOIN Cargo ON Cargo.id_cargo = Personal.id_cargo) AS Paginado
+WHERE
+	-- STR(). Convierte un tipo Numeric a varchar, de no hacerlo, marcará un error.
+	(Nombres + Identificación + STR(SueldoPorHora) + Cargo + Estado + País LIKE '%' + @Buscador + '%')
+GO
+/****** Object:  StoredProcedure [dbo].[BuscarPersonalIdentidad]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[BuscarPersonalIdentidad]
+	@Buscador varchar(50)
+AS
+SELECT * FROM Personal WHERE Identificación = @Buscador
+GO
+/****** Object:  StoredProcedure [dbo].[ConfirmarSalida]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[ConfirmarSalida]
+	@id_personal INT,
+	@fecha_salida DATETIME,
+	@horas NUMERIC(18,2)
+AS
+UPDATE Asistencias SET
+	fecha_salida = @fecha_salida,
+	horas = @horas,
+	estado = 'SALIDA'
+WHERE id_personal = @id_personal AND estado = 'ENTRADA'
+GO
+/****** Object:  StoredProcedure [dbo].[EditarCargo]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[EditarCargo]
+@id int,
+@Cargo varchar(max),
+@Sueldo numeric(18,2)
+AS
+IF EXISTS (SELECT Cargo FROM Cargo WHERE Cargo=@Cargo AND id_cargo&lt;&gt;@id)
+	RAISERROR('YA EXISTE UN CARGO CON ESTE NOMBRE. INGRESE DE NUEVO', 16, 1)
+ELSE
+	UPDATE Cargo SET Cargo=@Cargo, SueldoPorHora=@Sueldo WHERE id_cargo=@id
+GO
+/****** Object:  StoredProcedure [dbo].[EditarPersonal]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[EditarPersonal]
+@id_personal int,
+@Nombres varchar(max),
+@Identificación varchar(max),
+@País varchar(max),
+@id_cargo varchar(max),
+@SueldoPorHora numeric(18,2)
+AS
+IF EXISTS(SELECT Identificación FROM Personal WHERE Identificación = @Identificación AND id_personal &lt;&gt; @id_personal)
+	Raiserror('Ya existe un registro con esta identificación', 16, 1)
+ELSE
+	UPDATE Personal SET
+		Nombres = @Nombres,
+		Identificación = @Identificación,
+		País = @País,
+		id_cargo = @id_cargo,
+		SueldoPorHora = @SueldoPorHora
+	WHERE id_personal = @id_personal
+GO
+/****** Object:  StoredProcedure [dbo].[EditarUsuarios]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[EditarUsuarios]
+	@Id INT,
+	@Nombres VARCHAR(50),
+	@Usuario VARCHAR(50),
+	@Password VARCHAR(50),
+	@Icono IMAGE,
+	@Estado VARCHAR(50)
+AS
+UPDATE Usuarios SET
+		NombresApellidos = @Nombres,
+		Login = @Usuario,
+		Password = @Password,
+		Icono = @Icono,
+		Estado = @Estado
+WHERE IdUsuario = @Id
+GO
+/****** Object:  StoredProcedure [dbo].[EliminarPermisos]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[EliminarPermisos]
+	@IdUsuario INT
+AS
+DELETE FROM Permisos WHERE idUsuario = @IdUsuario
+GO
+/****** Object:  StoredProcedure [dbo].[EliminarPersonal]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[EliminarPersonal]
+	@id_personal int
+AS
+UPDATE Personal SET Estado = 'ELIMINADO'
+WHERE id_personal = @id_personal
+GO
+/****** Object:  StoredProcedure [dbo].[InsertarAsistencias]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[InsertarAsistencias]
+	@id_personal INT,
+	@fecha_entrada DATETIME,
+	@fecha_salida DATETIME,
+	@estado VARCHAR(50),
+	@horas NUMERIC(18,2),
+	@observación VARCHAR(MAX)
+AS
+INSERT INTO Asistencias VALUES(
+	@id_personal,
+	@fecha_entrada,
+	@fecha_salida,
+	@estado,
+	@horas,
+	@observación
+)
+GO
+/****** Object:  StoredProcedure [dbo].[InsertarCargo]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[InsertarCargo]
+@Cargo varchar(max),
+@SueldoPorHora numeric(18,2)
+AS
+IF EXISTS(SELECT Cargo FROM Cargo WHERE Cargo=@Cargo)
+	RAISERROR('YA EXISTE UN CARGO CON ESTE NOMBRE. INGRESE DE NUEVO', 16, 1)
+ELSE
+	INSERT INTO Cargo VALUES(@Cargo, @SueldoPorHora)
+GO
+/****** Object:  StoredProcedure [dbo].[InsertarPermisos]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[InsertarPermisos]
+	@IdModulo INT,
+	@IdUsuario INT
+AS
+INSERT INTO Permisos VALUES( @IdModulo, @IdUsuario)
+GO
+/****** Object:  StoredProcedure [dbo].[InsertarPersonal]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[InsertarPersonal]
+	@Nombres varchar(max),
+	@Identificación varchar(max),
+	@País varchar(max),
+	@id_cargo int,
+	@SueldoPorHora numeric(18,2)
+AS
+
+DECLARE @Estado varchar(max)
+DECLARE @codigo varchar(max)
+DECLARE @id_personal int
+
+SET @Estado = 'ACTIVO'
+SET @codigo = '-'
+
+IF EXISTS (SELECT Identificación FROM Personal WHERE Identificación = @Identificación)
+	Raiserror('Ya existe un registro con esta identificación', 16, 1)
+ELSE
+	INSERT INTO Personal VALUES(
+		@Nombres,
+		@Identificación,
+		@País,
+		@id_cargo,
+		@SueldoPorHora,
+		@Estado,
+		@codigo )
+	-- SCOPE_IDENTITY(). Devuelve el último ID creado en la misma conexión y el mismo contexto. En este caso el contexto se refiere a la consulta o procedimiento almacenado actual.
+	-- https://www.campusmvp.es/recursos/post/sql-server-cuales-son-las-diferencias-entre-at-at-identity-y-scope-identity.aspx#:~:text=Scope_identity()%20%3A%20la%20que%20recomendamos,que%20haya%20en%20ese%20momento)
+	SELECT @id_personal = SCOPE_IDENTITY()
+	UPDATE Personal SET codigo = @id_personal WHERE id_personal = @id_personal
+GO
+/****** Object:  StoredProcedure [dbo].[InsertarUsuario]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[InsertarUsuario]
+	@Nombres VARCHAR(50),
+	@Login VARCHAR(50),
+	@Password VARCHAR(50),
+	@Icono IMAGE,
+	@Estado VARCHAR(50)
+AS
+IF EXISTS(SELECT Login FROM Usuarios WHERE Login = @Login)
+	RAISERROR('YA EXISTE UN REGISTRO CON ESE USUARIO, POR FAVOR, INGRESE DE NUEVO', 16, 1)
+ELSE
+	INSERT INTO Usuarios VALUES(
+		@Nombres,
+		@Login,
+		@Password,
+		@Icono,
+		@Estado)
+GO
+/****** Object:  StoredProcedure [dbo].[MostrarPermisos]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[MostrarPermisos]
+	@IdUsuario INT
+AS
+SELECT idModulo FROM Permisos WHERE idUsuario = @IdUsuario
+GO
+/****** Object:  StoredProcedure [dbo].[MostrarPersonal]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[MostrarPersonal]
+	@Desde int,
+	@Hasta int
+AS
+SET Nocount ON;
+SELECT
+	id_personal,
+	Nombres,
+	Identificación,
+	SueldoPorHora,
+	Cargo,
+	id_cargo,
+	Estado,
+	codigo,
+	País
+FROM
+	(SELECT
+		id_personal,
+		Nombres,
+		Identificación,
+		Personal.SueldoPorHora,
+		Cargo.Cargo,
+		Personal.id_cargo,
+		Estado,
+		codigo,
+		País,
+		-- ROW_NUMBER(). Agrega e incluye un número incremental único a la cuadrícula de resultados. El orden de las filas está determinado por la expresión ORDER_BY. Crea un valor integral cada vez mayor y que siempre comienza en 1 y las filas posteriores obtienen el siguiente valor incremental más alto.
+		-- OVER(). Esta cláusula define la ventana o el conjunto de filas en las que opera la función de ventana. ORDER BY() de esta cláusula se utiliza cuando las filas deben alinearse de cierta manera para que la función funcione.
+		-- https://www.sqlshack.com/es/descripcion-general-de-la-funcion-sql-row_number/
+		ROW_NUMBER() Over(ORDER BY id_personal) 'Numero_de_fila'
+	FROM
+		Personal
+	INNER JOIN Cargo ON Cargo.id_cargo = Personal.id_cargo
+) AS Paginado
+WHERE
+	(Paginado.Numero_de_fila &gt;= @Desde)
+	AND
+	(Paginado.Numero_de_fila &lt;= @Hasta)
+GO
+/****** Object:  StoredProcedure [dbo].[ObtenerIdUsuario]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[ObtenerIdUsuario]
+	@Login VARCHAR(50)
+AS
+SELECT IdUsuario FROM Usuarios WHERE Login = @Login
+GO
+/****** Object:  StoredProcedure [dbo].[RestaurarPersonal]    Script Date: 08/11/2021 10:55:08 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROC [dbo].[RestaurarPersonal]
+	@id_personal int
+AS
+	UPDATE
+		Personal SET Estado = 'ACTIVO'
+	WHERE
+		id_personal = @id_personal
+GO
+USE [master]
+GO
+ALTER DATABASE [ORUS369] SET  READ_WRITE 
+GO</value>
+  </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 17</value>
+  </metadata>
+  <metadata name="timer3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>191, 17</value>
+  </metadata>
+  <metadata name="timer4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>278, 17</value>
+  </metadata>
+</root>

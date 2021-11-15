@@ -63,6 +63,16 @@ namespace Sistema_de_asistencias.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap animal {
+            get {
+                object obj = ResourceManager.GetObject("animal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap azul {
             get {
                 object obj = ResourceManager.GetObject("azul", resourceCulture);
@@ -93,6 +103,26 @@ namespace Sistema_de_asistencias.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap caution {
+            get {
+                object obj = ResourceManager.GetObject("caution", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap comenzar {
+            get {
+                object obj = ResourceManager.GetObject("comenzar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap copia_de_seguridad_de_archivos {
             get {
                 object obj = ResourceManager.GetObject("copia-de-seguridad-de-archivos", resourceCulture);
@@ -113,6 +143,16 @@ namespace Sistema_de_asistencias.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EleccionComputadora {
+            get {
+                object obj = ResourceManager.GetObject("EleccionComputadora", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Eliminar {
             get {
                 object obj = ResourceManager.GetObject("Eliminar", resourceCulture);
@@ -126,6 +166,46 @@ namespace Sistema_de_asistencias.Properties {
         internal static System.Drawing.Bitmap estaciones {
             get {
                 object obj = ResourceManager.GetObject("estaciones", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap extraterrestre {
+            get {
+                object obj = ResourceManager.GetObject("extraterrestre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap foto__1_ {
+            get {
+                object obj = ResourceManager.GetObject("foto (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fuego__1_ {
+            get {
+                object obj = ResourceManager.GetObject("fuego (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JovialMeagerBull_size_restricted {
+            get {
+                object obj = ResourceManager.GetObject("JovialMeagerBull-size_restricted", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,6 +243,26 @@ namespace Sistema_de_asistencias.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nuclear {
+            get {
+                object obj = ResourceManager.GetObject("nuclear", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap palanca_de_mando {
+            get {
+                object obj = ResourceManager.GetObject("palanca-de-mando", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reloj_despertador_digital {
             get {
                 object obj = ResourceManager.GetObject("reloj-despertador-digital", resourceCulture);
@@ -186,6 +286,16 @@ namespace Sistema_de_asistencias.Properties {
         internal static System.Drawing.Bitmap rosa {
             get {
                 object obj = ResourceManager.GetObject("rosa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Trinaranja {
+            get {
+                object obj = ResourceManager.GetObject("Trinaranja", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -22,10 +22,6 @@ namespace Sistema_de_asistencias
             frm.ShowDialog();
             // Ejecuta la aplicación
             Application.Run();
-
-
-            // Qué pantalla se mostrará al inicio de la aplicación
-            //Application.Run(new Presentacion.Login());
         }
 
         // Evento que se ejecuta cuando se destruye (Dispose) el formulario Login

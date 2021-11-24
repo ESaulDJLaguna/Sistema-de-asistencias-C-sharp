@@ -1,6 +1,7 @@
 ﻿using Sistema_de_asistencias.Datos;
 using Sistema_de_asistencias.Logica;
 using Sistema_de_asistencias.Presentacion.AsistenteInstalación;
+using Sistema_de_asistencias.Presentacion;
 using System;
 using System.Data;
 using System.Drawing;
@@ -18,6 +19,7 @@ namespace Sistema_de_asistencias.Presentacion
         string usuario; // Almacenará el nombre de usuario para mostrarlo en el panel de usuarios
         int idUsuario; // Almacenará el id de un usuario
         string indicador; // Se utiliza para indicar si hay conexión (existe una BD) o no
+        int contador; // Se utiliza para saber si existen usuarios creados
 
         // Evento que se ejecuta cuando carga el formulario Login
         private void Login_Load(object sender, EventArgs e)
@@ -31,9 +33,22 @@ namespace Sistema_de_asistencias.Presentacion
             VerificarConexion();
             // Si ya existe la BD ...
             if( indicador == "Correcto")
-            {
-                // ... Muestra la lista de usuarios para loguearse
-                DibujarUsuarios();
+            {   
+                // Si contador es 0 (NO existen usuarios registrados), significa que es una instalación nueva ...
+                MostrarUsuarios();
+                if(contador == 0)
+                {
+                    // Destruye el formulario actual
+                    Dispose();
+                    // ... nos lleva al formulario para crera un usuario nuevo
+                    UsuarioPrincipal frm = new UsuarioPrincipal();
+                    frm.ShowDialog();
+                }
+                else
+                {
+                    // ... Muestra la lista de usuarios para loguearse
+                    DibujarUsuarios();
+                }
             }
             // Si no existe la BD ...
             else
@@ -45,6 +60,15 @@ namespace Sistema_de_asistencias.Presentacion
                 // Muestra el Formulario como una caja de diálogo modal
                 frm.ShowDialog();
             }
+        }
+        // Obtiene la cantidad de usuarios registrados y los almacena en contador
+        private void MostrarUsuarios()
+        {
+            DataTable dt = new DataTable();
+            DUsuarios funcion = new DUsuarios();
+            funcion.MostrarUsuarios(ref dt);
+            // Cuenta todas las filas que tenga la variable dt
+            contador = dt.Rows.Count;
         }
         // Verifica si ya está creada la BD en el servidor
         private void VerificarConexion()

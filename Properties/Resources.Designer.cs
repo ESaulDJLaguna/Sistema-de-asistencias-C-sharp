@@ -183,6 +183,16 @@ namespace Sistema_de_asistencias.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flecha_correcta {
+            get {
+                object obj = ResourceManager.GetObject("flecha-correcta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap foto__1_ {
             get {
                 object obj = ResourceManager.GetObject("foto (1)", resourceCulture);

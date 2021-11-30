@@ -74,7 +74,7 @@ namespace Sistema_de_asistencias.Datos
             }
         }
         // Implementa el procedimiento almacenado que Elimina Personal en la Tabla Personal de la BD
-        public bool EliminarPermisos(LPersonal parametros)
+        public bool EliminarPermisos(LPermisos parametros)
         {
             // Protección del código. Evita que se detenga la aplicación en caso de algún fallo
             try
@@ -89,7 +89,7 @@ namespace Sistema_de_asistencias.Datos
                     CommandType = CommandType.StoredProcedure
                 };
                 // Pasamos todos los parámetros que requiere el procedimiento almacenado
-                cmd.Parameters.AddWithValue("@id_personal", parametros.Id_personal);
+                cmd.Parameters.AddWithValue("@id_personal", parametros.IdUsuario);
                 // ExecuteNonQuery ES UN MÉTODO QUE EJECUTA UNA INSTRUCCIÓN Transact-SQL EN LA CONEXIÓN Y DEVUELVE EL NÚMERO DE FILAS AFECTADAS
                 // Ejecuta la manipulación en la BD eliminando el Personal según el id pasado
                 cmd.ExecuteNonQuery();

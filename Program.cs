@@ -15,6 +15,7 @@ namespace Sistema_de_asistencias
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // El formulario Login será el primero en mostrarse, así que creamos una instancia
+            //Presentacion.Login frm = new Presentacion.Login();
             Presentacion.Login frm = new Presentacion.Login();
             // Qué queremos que pase al cerrar (destruir) el formulario Login
             frm.FormClosed += Frm_FormClosed;

@@ -160,7 +160,7 @@ namespace Sistema_de_asistencias.Presentacion
                     flowLayoutPanel2.Controls.Add(panel);
 
                     // Ejecuta un evento cuando el nombre del usuario es clickeado
-                    label.Click += MiEventoLabel_Click;
+                    //label.Click += MiEventoLabel_Click;
                     // Ejecuta un evento cuando la imagen del usuario es clickeado
                     picBox.Click += MiEventoImagen_Click;
                 }
@@ -176,18 +176,20 @@ namespace Sistema_de_asistencias.Presentacion
             // Como se está manipulando un objeto PictureBox, sender me permitirá acceder a sus propiedades
             // ... recupera de la propiedad Tag el nombre del usuario que se clickeo ...
             usuario = ((PictureBox)sender).Tag.ToString();
+            // Almacenamos la imagen del usuario (en un PictureBox en este formulario) para pasarla al ícono del formulario MenuPrincipal
+            Icono.Image = ((PictureBox)sender).Image;
             // ... y muestra el panel para ingresar la contraseña del usuario
             MostrarPanelPasswrd();
         }
         // Cuando se da clic en el nombre del usuario ...
-        private void MiEventoLabel_Click(object sender, EventArgs e)
-        {
+        //private void MiEventoLabel_Click(object sender, EventArgs e)
+        //{
             // Estamos manejando un objeto Label y sender me permite acceder a sus propiedades
             // ... recupera de su propiedad Text el nombre del usuario ...
-            usuario = ((Label)sender).Text;
+            //usuario = ((Label)sender).Text;
             // ... y muestra el panel para ingresar la contraseña del usario seleccionado
-            MostrarPanelPasswrd();
-        }
+            //MostrarPanelPasswrd();
+        //}
         // Muestra el panel para ingresar la contraseña del usuario a loguearse
         private void MostrarPanelPasswrd()
         {
@@ -222,6 +224,10 @@ namespace Sistema_de_asistencias.Presentacion
                 Dispose();
                 // Pasamos al MenuPrincipal (Necesitamos construirlo). Se crea una instancia del formulario ...
                 MenuPrincipal frm = new MenuPrincipal();
+                // Antes de abrir el Formulario, "rescatamos" el idUsuario, el Login y la imagen del usuario
+                frm.idUsuario = idUsuario;
+                frm.loginV = usuario;
+                frm.Icono.Image = Icono.Image;
                 // ... lo mostramos como una ventana nueva
                 frm.ShowDialog();
             }

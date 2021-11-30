@@ -59,9 +59,8 @@ namespace Sistema_de_asistencias.Presentacion
             this.BtnPersonal = new System.Windows.Forms.Button();
             this.BtnConsultas = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.LblLogin = new System.Windows.Forms.Label();
+            this.Icono = new System.Windows.Forms.PictureBox();
             this.PanelPrincipal = new System.Windows.Forms.Panel();
             this.panelBienvenida = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -75,8 +74,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel8.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Icono)).BeginInit();
             this.PanelPrincipal.SuspendLayout();
             this.panelBienvenida.SuspendLayout();
             this.SuspendLayout();
@@ -427,44 +425,34 @@ namespace Sistema_de_asistencias.Presentacion
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Controls.Add(this.LblLogin);
+            this.panel3.Controls.Add(this.Icono);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(191, 66);
             this.panel3.TabIndex = 0;
             // 
-            // label2
+            // LblLogin
             // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(90, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 66);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Orus 369";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblLogin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblLogin.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblLogin.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.LblLogin.Location = new System.Drawing.Point(69, 0);
+            this.LblLogin.Name = "LblLogin";
+            this.LblLogin.Size = new System.Drawing.Size(122, 66);
+            this.LblLogin.TabIndex = 3;
+            this.LblLogin.Text = "Orus 369";
+            this.LblLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox3
+            // Icono
             // 
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox3.Location = new System.Drawing.Point(45, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(45, 66);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(45, 66);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.Icono.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Icono.Location = new System.Drawing.Point(0, 0);
+            this.Icono.Name = "Icono";
+            this.Icono.Size = new System.Drawing.Size(69, 66);
+            this.Icono.TabIndex = 0;
+            this.Icono.TabStop = false;
             // 
             // PanelPrincipal
             // 
@@ -518,8 +506,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel8.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Icono)).EndInit();
             this.PanelPrincipal.ResumeLayout(false);
             this.panelBienvenida.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -559,10 +546,9 @@ namespace Sistema_de_asistencias.Presentacion
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label LblLogin;
         private System.Windows.Forms.Panel panelBienvenida;
         private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.PictureBox Icono;
     }
 }

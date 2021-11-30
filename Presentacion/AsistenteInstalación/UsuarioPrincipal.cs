@@ -83,21 +83,19 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
                 DPermisos funcion = new DPermisos();
                 parametros.IdModulo = idModulo;
                 parametros.IdUsuario = idUsuario;
-                if (funcion.InsertarPermisos(parametros))
-                {
-                    MessageBox.Show("¡LISTO! RECUERDA que para Iniciar Sesión tu Usuario es: " + TxtUsuario.Text + ", y tu Contraseña es: " + TxtPasswrd.Text, "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Dispose();
-                    Login frm = new Login();
-                    frm.ShowDialog();
-                }
+                funcion.InsertarPermisos(parametros);
             }
+            MessageBox.Show("¡LISTO! RECUERDA que para Iniciar Sesión tu Usuario es: " + TxtUsuario.Text + ", y tu Contraseña es: " + TxtPasswrd.Text, "Registro Exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Dispose();
+            Login frm = new Login();
+            frm.ShowDialog();
         }
 
         private void InsertarModulos()
         {
             LModulos parametros = new LModulos();
             DModulos funcion = new DModulos();
-            var modulos = new List<string> { "Usuarios", "Respaldo", "Personal", "PrePlanillas" };
+            var modulos = new List<string> { "Usuarios", "Respaldos", "Personal", "PrePlanillas" };
             foreach( var modulo in modulos)
             {
                 parametros.Modulo = modulo;

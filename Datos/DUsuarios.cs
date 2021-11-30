@@ -111,6 +111,52 @@ namespace Sistema_de_asistencias.Datos
             }
         }
 
+        public bool EliminarUsuarios(LUsuarios parametros)
+        {
+            try
+            {
+                CONEXIONMAESTRA.Abrir();
+                SqlCommand cmd = new SqlCommand("EliminarUsuarios", CONEXIONMAESTRA.conectar);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idusuario", parametros.IdUsuario);
+                cmd.Parameters.AddWithValue("@login", parametros.Login);
+
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+            finally
+            {
+                CONEXIONMAESTRA.Cerrar();
+            }
+        }
+
+        public bool RestaurarUsuario(LUsuarios parametros)
+        {
+            try
+            {
+                CONEXIONMAESTRA.Abrir();
+                SqlCommand cmd = new SqlCommand("RestaurarUsuario", CONEXIONMAESTRA.conectar);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idusuario", parametros.IdUsuario);
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+            finally
+            {
+                CONEXIONMAESTRA.Cerrar();
+            }
+        }
+
         // Manipula la BD y edita la información de los usuarios
         public bool EditarUsuarios(LUsuarios parametros)
         {
@@ -151,6 +197,26 @@ namespace Sistema_de_asistencias.Datos
             finally
             {
                 // Si está abierta la conexión a la BD y se ejecute o no el procedimiento: ciérrala
+                CONEXIONMAESTRA.Cerrar();
+            }
+        }
+        
+        public void BuscarUsuarios(ref DataTable dt, string buscador)
+        {
+            try
+            {
+                CONEXIONMAESTRA.Abrir();
+                SqlDataAdapter da = new SqlDataAdapter("BuscarUsuarios", CONEXIONMAESTRA.conectar);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@buscador", buscador);
+                da.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.StackTrace);
+            }
+            finally
+            {
                 CONEXIONMAESTRA.Cerrar();
             }
         }

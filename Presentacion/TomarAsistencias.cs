@@ -184,5 +184,12 @@ namespace Sistema_de_asistencias.Presentacion
                 }
             }
         }
+
+        private void BtnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            Dispose();
+            Login frm = new Login();
+            frm.ShowDialog();
+        }
     }
 }

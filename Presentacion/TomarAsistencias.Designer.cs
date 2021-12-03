@@ -99,6 +99,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.BtnIniciarSesion.TabIndex = 1;
             this.BtnIniciarSesion.Text = "Iniciar Sesión";
             this.BtnIniciarSesion.UseVisualStyleBackColor = false;
+            this.BtnIniciarSesion.Click += new System.EventHandler(this.BtnIniciarSesion_Click);
             // 
             // panel5
             // 

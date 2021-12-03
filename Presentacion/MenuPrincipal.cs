@@ -2,6 +2,8 @@
 using Sistema_de_asistencias.Logica;
 using System;
 using System.Data;
+using System.Data.SqlClient;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Sistema_de_asistencias.Presentacion
@@ -12,6 +14,9 @@ namespace Sistema_de_asistencias.Presentacion
         {
             InitializeComponent();
         }
+        string baseDeDatos = "ORUS369";
+        string servidor = @".\SQLEXPRESS";
+        string ruta;
         // Almacenará el id del usuario logueado actualmente, pero se llenará en el Formulario Login
         public int idUsuario;
         // Almacenará el usuario actual, pero se hará desde el Formulario Login
@@ -23,6 +28,7 @@ namespace Sistema_de_asistencias.Presentacion
             // ... el panel de Bienvenida (contiene un label con el texto de bienvenida) rellenará (ocupará) todo el panel donde está contenido
             panelBienvenida.Dock = DockStyle.Fill;
             ValidarPermisos();
+            LblLogin.Text = loginV;
         }
 
         // Método que habilita los botones según los permisos que tenga cada usuario
@@ -99,6 +105,102 @@ namespace Sistema_de_asistencias.Presentacion
             };
             // Agregamos el control al panel principal
             PanelPrincipal.Controls.Add(control);
+        }
+
+        private void BtnRegistro_Click(object sender, EventArgs e)
+        {
+            Dispose();
+            TomarAsistencias frm = new TomarAsistencias();
+            frm.ShowDialog();
+        }
+        private void BtnConsultas_Click(object sender, EventArgs e)
+        {
+            // TODO... Buscar otra forma de generar reportes, en vez de utilizar Telerik (ver Sección 8, vídeo 24)
+        }
+
+        private void BtnRespaldos_Click(object sender, EventArgs e)
+        {
+            // ... limpia el PanelPrincipal
+            PanelPrincipal.Controls.Clear();
+            // Crea una nueva instancia del "User Control" ControlUsuarios ...
+            CopiasBD control = new CopiasBD
+            {
+                // control.Dock = DockStyle.Fill;
+                // ... y ocupará todo el espacio del PanelPrincipal.
+                Dock = DockStyle.Fill
+            };
+            // Agregamos el control al panel principal
+            PanelPrincipal.Controls.Add(control);
+        }
+
+        private void BtnRestaurarBD_Click(object sender, EventArgs e)
+        {
+            RestaurarBDExpress();
+        }
+
+        private void RestaurarBDExpress()
+        {
+            Dlg.InitialDirectory = "";
+            Dlg.Filter = "Backup " + baseDeDatos + "|*.bak";
+            Dlg.FilterIndex = 2;
+            Dlg.Title = "Cargador de Backup";
+            if(Dlg.ShowDialog() == DialogResult.OK)
+            {
+                ruta = Path.GetFullPath(Dlg.FileName);
+                DialogResult pregunta = MessageBox.Show("Usted está a punto de restaurar la base de datos. Asegúrese de que el archivo .bak sea reciente, de lo contrario, podría perder información y no podrá recuperarla.\n¿Desea continuar?", "Restauración de la Base de Datos", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if(pregunta == DialogResult.Yes)
+                {
+                    SqlConnection cnn = new SqlConnection("Server=" + servidor + ";database=master; integrated security=yes");
+                    try
+                    {
+                        cnn.Open();
+                        string proceso = "EXEC msdb.dbo.sp_delete_database_backuphistory @database_name = N'" + baseDeDatos + "' USE [master] ALTER DATABASE [" + baseDeDatos + "] SET SINGLE_USER WITH ROLLBACK IMMEDIATE DROP DATABASE [" + baseDeDatos + "] RESTORE DATABASE " + baseDeDatos + " FROM DISK = N'" + ruta + "' WITH FILE = 1, NOUNLOAD, REPLACE, STATS = 10";
+                        SqlCommand borraRestaura = new SqlCommand(proceso, cnn);
+                        borraRestaura.ExecuteNonQuery();
+                        MessageBox.Show("¡La base de datos ha sido restaurada satisfactoriamente! Vuelve a iniciar la aplicación", "Restauración de Base de Datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Dispose();
+                    }
+                    catch (Exception)
+                    {
+                        RestaurarBDNoExpress();
+                    }
+                    finally
+                    {
+                        if(cnn.State == ConnectionState.Open)
+                        {
+                            cnn.Close();
+                        }
+                    }
+                    
+                }
+            }
+
+        } // RestaurarBDExpress()
+
+        private void RestaurarBDNoExpress()
+        {
+            servidor = ".";
+            SqlConnection cnn = new SqlConnection("Server=" + servidor + ";database=master; integrated security=yes");
+            try
+            {
+                cnn.Open();
+                string proceso = "EXEC msdb.dbo.sp_delete_database_backuphistory @database_name = N'" + baseDeDatos + "' USE [master] ALTER DATABASE [" + baseDeDatos + "] SET SINGLE_USER WITH ROLLBACK IMMEDIATE DROP DATABASE [" + baseDeDatos + "] RESTORE DATABASE " + baseDeDatos + " FROM DISK = N'" + ruta + "' WITH FILE = 1, NOUNLOAD, REPLACE, STATS = 10";
+                SqlCommand borraRestaura = new SqlCommand(proceso, cnn);
+                borraRestaura.ExecuteNonQuery();
+                MessageBox.Show("¡La base de datos ha sido restaurada satisfactoriamente! Vuelve a iniciar la aplicación", "Restauración de Base de Datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Dispose();
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+                if (cnn.State == ConnectionState.Open)
+                {
+                    cnn.Close();
+                }
+            }
         }
     }
 }

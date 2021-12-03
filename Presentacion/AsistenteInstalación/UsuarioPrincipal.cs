@@ -58,10 +58,16 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
             parametros.Icono = ms.GetBuffer();
             if(funcion.InsertarUsuario(parametros))
             {
+                InsertarCopiasBD();
                 InsertarModulos();
                 ObtenerIdUsuario();
                 InsertarPermisos();
             }
+        }
+        private void InsertarCopiasBD()
+        {
+            DCopiasBD funcion = new DCopiasBD();
+            funcion.InsertarCopiasBD();
         }
 
         private void ObtenerIdUsuario()

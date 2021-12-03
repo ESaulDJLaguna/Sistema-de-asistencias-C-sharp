@@ -64,6 +64,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.PanelPrincipal = new System.Windows.Forms.Panel();
             this.panelBienvenida = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.Dlg = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel17.SuspendLayout();
@@ -234,6 +235,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.BtnRespaldos.Text = "Respaldos";
             this.BtnRespaldos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnRespaldos.UseVisualStyleBackColor = false;
+            this.BtnRespaldos.Click += new System.EventHandler(this.BtnRespaldos_Click);
             // 
             // panel15
             // 
@@ -280,6 +282,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.BtnRestaurarBD.Text = "Restarurar BBDD";
             this.BtnRestaurarBD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnRestaurarBD.UseVisualStyleBackColor = false;
+            this.BtnRestaurarBD.Click += new System.EventHandler(this.BtnRestaurarBD_Click);
             // 
             // panel12
             // 
@@ -373,6 +376,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.BtnRegistro.Text = "Registro";
             this.BtnRegistro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnRegistro.UseVisualStyleBackColor = false;
+            this.BtnRegistro.Click += new System.EventHandler(this.BtnRegistro_Click);
             // 
             // panel7
             // 
@@ -422,6 +426,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.BtnConsultas.TabIndex = 1;
             this.BtnConsultas.Text = "Pre planilla";
             this.BtnConsultas.UseVisualStyleBackColor = false;
+            this.BtnConsultas.Click += new System.EventHandler(this.BtnConsultas_Click);
             // 
             // panel3
             // 
@@ -451,6 +456,7 @@ namespace Sistema_de_asistencias.Presentacion
             this.Icono.Location = new System.Drawing.Point(0, 0);
             this.Icono.Name = "Icono";
             this.Icono.Size = new System.Drawing.Size(69, 66);
+            this.Icono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Icono.TabIndex = 0;
             this.Icono.TabStop = false;
             // 
@@ -483,6 +489,10 @@ namespace Sistema_de_asistencias.Presentacion
             this.label3.TabIndex = 0;
             this.label3.Text = "Bienvenido a Orus 369";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Dlg
+            // 
+            this.Dlg.FileName = "openFileDialog1";
             // 
             // MenuPrincipal
             // 
@@ -550,5 +560,6 @@ namespace Sistema_de_asistencias.Presentacion
         private System.Windows.Forms.Panel panelBienvenida;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.PictureBox Icono;
+        private System.Windows.Forms.OpenFileDialog Dlg;
     }
 }

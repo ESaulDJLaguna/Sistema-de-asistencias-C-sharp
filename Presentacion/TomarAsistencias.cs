@@ -123,7 +123,7 @@ namespace Sistema_de_asistencias.Presentacion
             if(dt.Rows.Count > 0)
             {
                 // De la primer fila (la única obtenida en la consulta) obten el contenido de la celda que pertenece a la columna llamada 'Identificación' (así se llama en la consulta)
-                Identificacion = dt.Rows[0]["Identificación"].ToString();
+                Identificacion = dt.Rows[0]["Identificacion"].ToString();
                 // Obten el contenido de la columna llamada 'id_personal' de la primer fila
                 idPersonal = Convert.ToInt32(dt.Rows[0]["id_personal"]);
                 // Muestra el Nombre del usuario 

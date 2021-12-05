@@ -29,7 +29,9 @@ namespace Sistema_de_asistencias.Presentacion
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Icono = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.PanelIngresoContraseña = new System.Windows.Forms.Panel();
@@ -54,14 +56,13 @@ namespace Sistema_de_asistencias.Presentacion
             this.PanelUsuarios = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.Icono = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Icono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PanelIngresoContraseña.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.PanelUsuarios.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Icono)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,6 +76,15 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1212, 87);
             this.panel1.TabIndex = 0;
+            // 
+            // Icono
+            // 
+            this.Icono.Location = new System.Drawing.Point(583, 3);
+            this.Icono.Name = "Icono";
+            this.Icono.Size = new System.Drawing.Size(91, 83);
+            this.Icono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Icono.TabIndex = 3;
+            this.Icono.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -413,15 +423,6 @@ namespace Sistema_de_asistencias.Presentacion
             this.label2.Text = "¿Quién está Iniciando Sesión?";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Icono
-            // 
-            this.Icono.Location = new System.Drawing.Point(583, 3);
-            this.Icono.Name = "Icono";
-            this.Icono.Size = new System.Drawing.Size(91, 83);
-            this.Icono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Icono.TabIndex = 3;
-            this.Icono.TabStop = false;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -432,20 +433,20 @@ namespace Sistema_de_asistencias.Presentacion
             this.Controls.Add(this.PanelIngresoContraseña);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Icono)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelIngresoContraseña.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.PanelUsuarios.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Icono)).EndInit();
             this.ResumeLayout(false);
 
         }

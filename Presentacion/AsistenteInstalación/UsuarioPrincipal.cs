@@ -108,5 +108,31 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
                 funcion.InsertarModulos(parametros);
             }
         }
+
+        private void validaPasswrd(KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TxtPasswrd_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validaPasswrd(e);
+        }
+
+        private void TxtConfPass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validaPasswrd(e);
+        }
     }
 }

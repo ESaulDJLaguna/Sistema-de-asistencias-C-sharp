@@ -67,7 +67,7 @@ namespace Sistema_de_asistencias.Presentacion
         private void Limpiar()
         {
             // Limpiamos el textBox de Nombre
-            // Otra forma de limpiar sería: txtNombre.Text = "";
+            //* Otra forma de limpiar sería: txtNombre.Text = "";
             TxtNombre.Clear();
             // Limpiamos el textBox de Identificación
             TxtIdentificacion.Clear();
@@ -76,7 +76,7 @@ namespace Sistema_de_asistencias.Presentacion
             // Limpiamos el textBox de Sueldo por hora
             TxtSueldoHora.Clear();
             // Limpiamos el país
-            // CbxPais.SelectedIndex = 0; // Elige una opción por defecto de toda la lista
+            //* CbxPais.SelectedIndex = 0; // Elige una opción por defecto de toda la lista
             CbxPais.Text = "";
             // Muestra los Cargos en el DataGridView (dataListadoCargos), si no se llama se verá un cuadro gris
             BuscarCargos();
@@ -219,7 +219,7 @@ namespace Sistema_de_asistencias.Presentacion
         // Muestra el resultado de la consulta que se programó en el procedimiento almacenado BuscarCargos en la base de datos
         private void BuscarCargos()
         {
-            // Un DataTable representa una tabla de datos en memoria (se muestra su contenido en un DataGridView)
+            //* Un DataTable representa una tabla de datos en memoria (se muestra su contenido en un DataGridView)
             DataTable dt = new DataTable();
             // Se utilizará el método de búsqueda en la capa de Datos de Cargo
             DCargos funciones = new DCargos();
@@ -237,7 +237,7 @@ namespace Sistema_de_asistencias.Presentacion
             // Haz visible el dataListadoCargos por si en algún evento anterior se ocultó
             DataListadoCargos.Visible = true;
         }
-        // TextChanged ES UN EVENTO QUE SE PRODUCE CUANDO CAMBIAN LAS PROPIEDADES Text Y SelectedValue
+        //* TextChanged ES UN EVENTO QUE SE PRODUCE CUANDO CAMBIAN LAS PROPIEDADES Text Y SelectedValue
         // Cada vez que se escribe una letra en el TextBox de Cargo...
         private void TxtCargo_TextChanged(object sender, EventArgs e)
         {
@@ -283,9 +283,9 @@ namespace Sistema_de_asistencias.Presentacion
         // Evento que se ejecuta cuando se seleccione una celda de un DataGridView. Queremos recuperar el id del cargo seleccionado en dataListadoCargos
         private void DataListadoCargos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            /* 
-             * e.ColumnIndex obtiene el índice de la columna presionada (0 es la imagen de lápiz).
-             * Columns (de un DataGridView) es una propiedad que obtiene una colección que contiene todas las columnas del DataGridView
+            /* * 
+             - e.ColumnIndex obtiene el índice de la columna presionada (0 es la imagen de lápiz).
+             - Columns (de un DataGridView) es una propiedad que obtiene una colección que contiene todas las columnas del DataGridView
              */
             // Si se hace clic en una columna del listado de Cargos y coincide con el índice de la columna llamada EditarC (imagen lapiz) ...
             if (e.ColumnIndex == DataListadoCargos.Columns["EditarC"].Index)
@@ -303,7 +303,7 @@ namespace Sistema_de_asistencias.Presentacion
         // Rellena los Text Box Cargo y Sueldo por hora del PanelRegistros con la información del cargo seleccionado en el dataListadoCargos
         private void ObtenerDatosCargos()
         {
-            // SelectedCells OBTIENE LA COLECCIÓN DE CELDAS SELECCIONADAS POR EL USUARIO
+            //* SelectedCells OBTIENE LA COLECCIÓN DE CELDAS SELECCIONADAS POR EL USUARIO
             // Obtiene el id del cargo seleccionado (posteriormente se utilizará para guardarlo en la BD en la tabla del Personal)
             idCargo = Convert.ToInt32(DataListadoCargos.SelectedCells[1].Value);
             // Rellena el Text Box Cargo (del panel Personal) con el contenido del cargo seleccionado
@@ -321,7 +321,7 @@ namespace Sistema_de_asistencias.Presentacion
         // Cuando se dio a elegir un cargo se presionó el botón editar (imagen del lápiz)
         private void ObtenerCargosEditar()
         {
-            // SelectedCells OBTIENE LA COLECCIÓN DE CELDAS SELECCIONADAS POR EL USUARIO
+            //* SelectedCells OBTIENE LA COLECCIÓN DE CELDAS SELECCIONADAS POR EL USUARIO
             // Se obtiene el id del cargo de la celda seleccionada para modificarlo en la BD
             idCargo = Convert.ToInt32(DataListadoCargos.SelectedCells[1].Value);
             // Rellena el Text Box Cargo del PanelCargos con el cargo seleccionado a editar
@@ -431,7 +431,7 @@ namespace Sistema_de_asistencias.Presentacion
         // Método que muestra el panel de Usuarios y la información del usuario a editar
         private void ObtenerDatos()
         {
-            // SelectedCells OBTIENE LA COLECCIÓN DE CELDAS SELECCIONADAS POR EL USUARIO
+            //* SelectedCells OBTIENE LA COLECCIÓN DE CELDAS SELECCIONADAS POR EL USUARIO
             // Se obtiene el id del Personal de la celda seleccionada para modificarlo en la BD
             idPersonal = Convert.ToInt32(DataListadoPersonal.SelectedCells[2].Value);
             // Obtendrá el estado de un usuario para saber si ya se eliminó
@@ -502,7 +502,7 @@ namespace Sistema_de_asistencias.Presentacion
         // Método que elimina un personal seleccionado de la BD
         private void EliminarPersonal()
         {
-            // SelectedCells OBTIENE LA COLECCIÓN DE CELDAS SELECCIONADAS POR EL USUARIO
+            //* SelectedCells OBTIENE LA COLECCIÓN DE CELDAS SELECCIONADAS POR EL USUARIO
             // Se obtiene el id del Personal de la celda seleccionada para Eliminar en la BD
             idPersonal = Convert.ToInt32(DataListadoPersonal.SelectedCells[2].Value);
             LPersonal parametros = new LPersonal();
@@ -515,8 +515,8 @@ namespace Sistema_de_asistencias.Presentacion
                 MostrarPersonal();
             }
         }
-        /*
-         * UN TIMER ES UN TEMPORIZADOR Y TRABAJA EN ms. POR DEFECTO ESTA DESACTIVADO, POR LO QUE SI QUEREMOS QUE FUNCIONE AL INICIAR LA APLICACIÓN, DEBEMOS CAMBIAR Enable = true.
+        /* *
+         - UN TIMER ES UN TEMPORIZADOR Y TRABAJA EN ms. POR DEFECTO ESTA DESACTIVADO, POR LO QUE SI QUEREMOS QUE FUNCIONE AL INICIAR LA APLICACIÓN, DEBEMOS CAMBIAR Enable = true.
          */
         // Cuando entremos al Timer ...
         private void Timer1_Tick(object sender, EventArgs e)
@@ -555,14 +555,14 @@ namespace Sistema_de_asistencias.Presentacion
         private void DataListadoPersonal_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
-            /* 
-             * e.ColumnIndex obtiene el índice de la columna presionada (0 es la imagen del tache; 1 del lápiz).
-             * Columns (de un DataGridView) es una propiedad que obtiene una colección que contiene todas las columnas del DataGridView
+            /* *
+             - e.ColumnIndex obtiene el índice de la columna presionada (0 es la imagen del tache; 1 del lápiz).
+             - Columns (de un DataGridView) es una propiedad que obtiene una colección que contiene todas las columnas del DataGridView
              */
             // Si se hace clic en una columna del listado de Cargos y coincide con el índice de la columna llamada Eliminar (imagen del tache) ...
             if (e.ColumnIndex == DataListadoPersonal.Columns["Eliminar"].Index)
             {
-                // SelectedCells OBTIENE LA COLECCIÓN DE CELDAS SELECCIONADAS POR EL USUARIO
+                //* SelectedCells OBTIENE LA COLECCIÓN DE CELDAS SELECCIONADAS POR EL USUARIO
                 // Se obtiene el id del Personal de la celda seleccionada para modificarlo en la BD
                 idPersonal = Convert.ToInt32(DataListadoPersonal.SelectedCells[2].Value);
                 // Obtendrá el estado de un usuario para saber si ya se eliminó
@@ -576,11 +576,12 @@ namespace Sistema_de_asistencias.Presentacion
                 // El usuario a eliminar aún sigue ACTIVO
                 else
                 {
-                    /* DialogResult (enum). Especifica identificadores para indicar el valor de retorno de un cuadro de diálogo. Campos: Abort(3), Cancel(2), Ignore(5), No(7), None(0), OK(1), Retry(4), Yes(6)
-                     * MessageBox (class). Muestra una ventana de mensaje (caja de diálogo), que muestra un mensaje al usuario.
-                     * Show (método sobrecargado). Despliega una caja de mensaje con un texto especificado, un título, un botón (botones) y un ícono.
-                     * MessageBoxButton (enum). Especifica constantes definidas con botones que se mostrarán en un MessageBox: AbortRetryIgnore(2), OK(0), OKCancel(1), RetryCancel(5), YesNo(4), YesNoCancel(3)
-                     * MessageBoxIcon (enum). Especifica constantes que definen qué información mostrar.
+                    /* *
+                     - DialogResult (enum). Especifica identificadores para indicar el valor de retorno de un cuadro de diálogo. Campos: Abort(3), Cancel(2), Ignore(5), No(7), None(0), OK(1), Retry(4), Yes(6)
+                     - MessageBox (class). Muestra una ventana de mensaje (caja de diálogo), que muestra un mensaje al usuario.
+                     - Show (método sobrecargado). Despliega una caja de mensaje con un texto especificado, un título, un botón (botones) y un ícono.
+                     - MessageBoxButton (enum). Especifica constantes definidas con botones que se mostrarán en un MessageBox: AbortRetryIgnore(2), OK(0), OKCancel(1), RetryCancel(5), YesNo(4), YesNoCancel(3)
+                     - MessageBoxIcon (enum). Especifica constantes que definen qué información mostrar.
                     */
                     // result contendrá si el usuario presionó el botón OK o Cancel
                     DialogResult result = MessageBox.Show("Solo se cambiará el Estado para que no pueda acceder, ¿Desea continuar?", "Eliminando registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -635,7 +636,7 @@ namespace Sistema_de_asistencias.Presentacion
             {
                 // Calcula en qué página esta actualmente (recordar que 'hasta' incrementa de 10 en 10)
                 LblPagina.Text = (hasta / itemsPorPagina).ToString();
-                // EL MÉTODO Ceiling RETORNA EL ENTERO MAYOR MÁS PRÓXIMO (si su argumento es 0.3, retorna 1)
+                //* EL MÉTODO Ceiling RETORNA EL ENTERO MAYOR MÁS PRÓXIMO (si su argumento es 0.3, retorna 1)
                 // Una división entre enteros trunca el decimal, por eso debemos convertir uno de ellos a decimal. Si existen 23 usuarios y se divide entre 10, el resultado es 2.3, por lo que se necesitan 3 páginas para mostrar a todos los usuarios, Ceiling incrementa a 3 el resultado y así se calcula el total de páginas
                 LblTotalPaginas.Text = Math.Ceiling(Convert.ToSingle(contador) / itemsPorPagina).ToString();
                 totalPaginas = Convert.ToInt32(LblTotalPaginas.Text);

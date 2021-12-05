@@ -290,16 +290,31 @@ namespace Sistema_de_asistencias.Presentacion
                 }
                 else
                 {
-                    ObtenerDatos();
+                    //ObtenerDatos();
+                    DialogResult resultado = MessageBox.Show("¿Realmente desea eliminar este Registro?", "Eliminando Registro", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                    if(resultado == DialogResult.OK)
+                    {
+                        CapturarIdUsuario();
+                        EliminarUsuarios();
+                    }
                 }
             }
             if (e.ColumnIndex == DataListadoPersonal.Columns["Editar"].Index)
             {
-                DialogResult resultado = MessageBox.Show("¿Realmente desea eliminar este Registro?", "Eliminando registros", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                if(resultado == DialogResult.OK)
+                ObtenerEstado();
+                if (estado == "ELIMINADO")
                 {
-                    CapturarIdUsuario();
-                    EliminarUsuarios();
+                    DialogResult resultado = MessageBox.Show("Este Usuario se Eliminó. ¿Desea Volver a Habilitarlo?", "Restauracion de registros", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                    if (resultado == DialogResult.OK)
+                    {
+                        // CapturarIdUsuario();
+                        // EliminarUsuarios();
+                        RestaurarUsuario();
+                    }
+                }
+                else
+                {
+                    ObtenerDatos();
                 }
             }
 

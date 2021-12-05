@@ -6,6 +6,8 @@
     <RootNamespace>Sistema_de_asistencias</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <StartupObject></StartupObject>
+    <ApplicationManifest>Orus369.manifest</ApplicationManifest>
+    <ApplicationIcon>MonoOrus.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>

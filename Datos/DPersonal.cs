@@ -27,8 +27,8 @@ namespace Sistema_de_asistencias.Datos
                 };
                 // Pasamos todos los parámetros que requiere el procedimiento almacenado
                 cmd.Parameters.AddWithValue("@Nombres", parametros.Nombres);
-                cmd.Parameters.AddWithValue("@Identificación", parametros.Identificacion);
-                cmd.Parameters.AddWithValue("@País", parametros.Pais);
+                cmd.Parameters.AddWithValue("@Identificacion", parametros.Identificacion);
+                cmd.Parameters.AddWithValue("@Pais", parametros.Pais);
                 cmd.Parameters.AddWithValue("@id_cargo", parametros.Id_cargo);
                 cmd.Parameters.AddWithValue("@SueldoPorHora", parametros.SueldoPorHora);
                 // ExecuteNonQuery ES UN MÉTODO QUE EJECUTA UNA INSTRUCCIÓN Transact-SQL EN LA CONEXIÓN Y DEVUELVE EL NÚMERO DE FILAS AFECTADAS
@@ -70,8 +70,8 @@ namespace Sistema_de_asistencias.Datos
                 // Pasamos todos los parámetros que requiere el procedimiento almacenado
                 cmd.Parameters.AddWithValue("@id_personal", parametros.Id_personal);
                 cmd.Parameters.AddWithValue("@Nombres", parametros.Nombres);
-                cmd.Parameters.AddWithValue("@Identificación", parametros.Identificacion);
-                cmd.Parameters.AddWithValue("@País", parametros.Pais);
+                cmd.Parameters.AddWithValue("@Identificacion", parametros.Identificacion);
+                cmd.Parameters.AddWithValue("@Pais", parametros.Pais);
                 cmd.Parameters.AddWithValue("@id_cargo", parametros.Id_cargo);
                 cmd.Parameters.AddWithValue("@SueldoPorHora", parametros.SueldoPorHora);
                 // ExecuteNonQuery ES UN MÉTODO QUE EJECUTA UNA INSTRUCCIÓN Transact-SQL EN LA CONEXIÓN Y DEVUELVE EL NÚMERO DE FILAS AFECTADAS

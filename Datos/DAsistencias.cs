@@ -60,7 +60,7 @@ namespace Sistema_de_asistencias.Datos
                 cmd.Parameters.AddWithValue("@fecha_salida", parametros.Fecha_salida);
                 cmd.Parameters.AddWithValue("@estado", parametros.Estado);
                 cmd.Parameters.AddWithValue("@horas", parametros.Horas);
-                cmd.Parameters.AddWithValue("@observación", parametros.Observacion);
+                cmd.Parameters.AddWithValue("@observacion", parametros.Observacion);
                 cmd.ExecuteNonQuery();
                 return true;
             }

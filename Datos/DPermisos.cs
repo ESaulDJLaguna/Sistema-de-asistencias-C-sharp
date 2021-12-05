@@ -89,7 +89,7 @@ namespace Sistema_de_asistencias.Datos
                     CommandType = CommandType.StoredProcedure
                 };
                 // Pasamos todos los parámetros que requiere el procedimiento almacenado
-                cmd.Parameters.AddWithValue("@id_personal", parametros.IdUsuario);
+                cmd.Parameters.AddWithValue("@IdUsuario", parametros.IdUsuario);
                 // ExecuteNonQuery ES UN MÉTODO QUE EJECUTA UNA INSTRUCCIÓN Transact-SQL EN LA CONEXIÓN Y DEVUELVE EL NÚMERO DE FILAS AFECTADAS
                 // Ejecuta la manipulación en la BD eliminando el Personal según el id pasado
                 cmd.ExecuteNonQuery();

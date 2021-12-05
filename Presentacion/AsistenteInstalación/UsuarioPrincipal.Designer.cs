@@ -29,6 +29,7 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsuarioPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BtnSiguiente = new System.Windows.Forms.Button();
@@ -159,10 +160,12 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
             this.TxtConfPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TxtConfPass.ForeColor = System.Drawing.Color.White;
             this.TxtConfPass.Location = new System.Drawing.Point(282, 201);
+            this.TxtConfPass.MaxLength = 6;
             this.TxtConfPass.Name = "TxtConfPass";
             this.TxtConfPass.Size = new System.Drawing.Size(311, 22);
             this.TxtConfPass.TabIndex = 2;
             this.TxtConfPass.UseSystemPasswordChar = true;
+            this.TxtConfPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtConfPass_KeyPress);
             // 
             // TxtPasswrd
             // 
@@ -171,10 +174,12 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
             this.TxtPasswrd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TxtPasswrd.ForeColor = System.Drawing.Color.White;
             this.TxtPasswrd.Location = new System.Drawing.Point(282, 154);
+            this.TxtPasswrd.MaxLength = 6;
             this.TxtPasswrd.Name = "TxtPasswrd";
             this.TxtPasswrd.Size = new System.Drawing.Size(311, 22);
             this.TxtPasswrd.TabIndex = 2;
             this.TxtPasswrd.UseSystemPasswordChar = true;
+            this.TxtPasswrd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtPasswrd_KeyPress);
             // 
             // TxtUsuario
             // 
@@ -307,9 +312,9 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
             this.ClientSize = new System.Drawing.Size(1336, 744);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UsuarioPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "UsuarioPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

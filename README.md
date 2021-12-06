@@ -97,9 +97,9 @@ Al dar clic en el botón 'Registro', abrirá un nuevo formulario en el cual se r
 1. Clonar el repositorio:
 
 ```
-git clone https://github.com/ESaulDJLaguna/Sistema-de-asistencias-C-sharp.git
+git clone https://github.com/ESaulDJLaguna/Sistema-de-asistencias-CS.git
 ```
 
-2. Acceder a la carpeta creada (Sistema-de-asistencias-C-sharp) y abrir el archivo _Sistema de asistencias.sln_ utilizando [Visual Studio](https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=Community&rel=17).
+2. Acceder a la carpeta creada (Sistema-de-asistencias-CS) y abrir el archivo _Sistema de asistencias.sln_ utilizando [Visual Studio](https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=Community&rel=17).
 3. Una vez abierto el proyecto con Visual Studio, se creará la carpeta _bin_, dentro de ella, acceder a _Debug_, finalmente, entrar a la carpeta _net5.0-windows_ y pegar la cadena de Conexión (ConnectionString.xml) que se encuentra en la carpeta _Adicionales_, en la raíz del proyecto, esta se utilizará para almacenar la cadena de conexión encriptada para acceder al servidor.
-4. Para que se pueda instalar de manera automática _SQL Server_, debe descargarse y guardarse en la misma carpeta donde se pegó la cadena de conexión. Se recomienda descargar la versión [Express 32BIT\SQLEXPR_x86_ENU.exe](https://www.microsoft.com/en-US/download/details.aspx?id=42299), ya que es la utilizada en el proyecto.
+4. Para que se pueda instalar de manera automática _SQL Server_, debe descargarse y guardarse en la misma carpeta donde se pegó la cadena de conexión. Se recomienda descargar la versión [Express 32BIT\SQLEXPR_x86_ENU.exe](https://www.microsoft.com/en-US/download/details.aspx?id=42299), ya que es la utilizada en el proyecto. **Además, la cadena de conexión debe ser eliminada y poner un texto cualquiera (no debe estar vacía, pero tampoco debe tener una cadena ya encriptada).**

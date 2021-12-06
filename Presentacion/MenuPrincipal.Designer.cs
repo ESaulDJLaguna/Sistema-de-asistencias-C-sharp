@@ -36,11 +36,6 @@ namespace Sistema_de_asistencias.Presentacion
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.BtnEstaciones = new System.Windows.Forms.Button();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.BtnRespaldos = new System.Windows.Forms.Button();
             this.panel15 = new System.Windows.Forms.Panel();
@@ -70,7 +65,6 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel4.SuspendLayout();
             this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel18.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -97,7 +91,6 @@ namespace Sistema_de_asistencias.Presentacion
             // panel4
             // 
             this.panel4.Controls.Add(this.panel17);
-            this.panel4.Controls.Add(this.panel18);
             this.panel4.Controls.Add(this.panel14);
             this.panel4.Controls.Add(this.panel11);
             this.panel4.Controls.Add(this.panel8);
@@ -114,9 +107,9 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel17.Controls.Add(this.pictureBox1);
             this.panel17.Controls.Add(this.panel22);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel17.Location = new System.Drawing.Point(0, 250);
+            this.panel17.Location = new System.Drawing.Point(0, 200);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(191, 164);
+            this.panel17.Size = new System.Drawing.Size(191, 214);
             this.panel17.TabIndex = 4;
             // 
             // label1
@@ -149,63 +142,6 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(191, 21);
             this.panel22.TabIndex = 0;
-            // 
-            // panel18
-            // 
-            this.panel18.Controls.Add(this.BtnEstaciones);
-            this.panel18.Controls.Add(this.panel21);
-            this.panel18.Controls.Add(this.panel19);
-            this.panel18.Controls.Add(this.panel20);
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel18.Location = new System.Drawing.Point(0, 200);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(191, 50);
-            this.panel18.TabIndex = 5;
-            // 
-            // BtnEstaciones
-            // 
-            this.BtnEstaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(19)))), ((int)(((byte)(19)))));
-            this.BtnEstaciones.BackgroundImage = global::Sistema_de_asistencias.Properties.Resources.naranja;
-            this.BtnEstaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnEstaciones.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnEstaciones.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BtnEstaciones.FlatAppearance.BorderSize = 0;
-            this.BtnEstaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEstaciones.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.BtnEstaciones.ForeColor = System.Drawing.Color.White;
-            this.BtnEstaciones.Image = global::Sistema_de_asistencias.Properties.Resources.estaciones;
-            this.BtnEstaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnEstaciones.Location = new System.Drawing.Point(10, 10);
-            this.BtnEstaciones.Name = "BtnEstaciones";
-            this.BtnEstaciones.Size = new System.Drawing.Size(171, 40);
-            this.BtnEstaciones.TabIndex = 3;
-            this.BtnEstaciones.Text = "Estaciones";
-            this.BtnEstaciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnEstaciones.UseVisualStyleBackColor = false;
-            // 
-            // panel21
-            // 
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel21.Location = new System.Drawing.Point(181, 10);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(10, 40);
-            this.panel21.TabIndex = 4;
-            // 
-            // panel19
-            // 
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel19.Location = new System.Drawing.Point(0, 10);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(10, 40);
-            this.panel19.TabIndex = 1;
-            // 
-            // panel20
-            // 
-            this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel20.Location = new System.Drawing.Point(0, 0);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(191, 10);
-            this.panel20.TabIndex = 0;
             // 
             // panel14
             // 
@@ -511,7 +447,6 @@ namespace Sistema_de_asistencias.Presentacion
             this.panel4.ResumeLayout(false);
             this.panel17.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel18.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
@@ -548,15 +483,10 @@ namespace Sistema_de_asistencias.Presentacion
         private System.Windows.Forms.Button BtnUsuarios;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Button BtnEstaciones;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Label LblLogin;
         private System.Windows.Forms.Panel panelBienvenida;
         private System.Windows.Forms.Label label3;

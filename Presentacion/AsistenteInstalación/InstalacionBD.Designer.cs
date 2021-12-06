@@ -34,6 +34,14 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.PanelContadoresOcultos = new System.Windows.Forms.Panel();
+            this.Min2 = new System.Windows.Forms.Label();
+            this.Seg3 = new System.Windows.Forms.Label();
+            this.Seg2 = new System.Windows.Forms.Label();
+            this.Ms = new System.Windows.Forms.Label();
+            this.Ms3 = new System.Windows.Forms.Label();
+            this.Ms2 = new System.Windows.Forms.Label();
+            this.LblServidor = new System.Windows.Forms.Label();
             this.PanelInstallServer = new System.Windows.Forms.Panel();
             this.PanelInstalando = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -54,13 +62,6 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
             this.panel6 = new System.Windows.Forms.Panel();
             this.TxtConfigFile = new System.Windows.Forms.RichTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.Min2 = new System.Windows.Forms.Label();
-            this.Seg3 = new System.Windows.Forms.Label();
-            this.Seg2 = new System.Windows.Forms.Label();
-            this.Ms = new System.Windows.Forms.Label();
-            this.Ms3 = new System.Windows.Forms.Label();
-            this.Ms2 = new System.Windows.Forms.Label();
-            this.LblServidor = new System.Windows.Forms.Label();
             this.TxtEliminaBD = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.TxtCrearUsuarioBD = new System.Windows.Forms.RichTextBox();
@@ -83,6 +84,7 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
             this.TimerCRARINI = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.PanelContadoresOcultos.SuspendLayout();
             this.PanelInstallServer.SuspendLayout();
             this.PanelInstalando.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -131,9 +133,89 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
             this.label1.Text = "Orus 369";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // PanelContadoresOcultos
+            // 
+            this.PanelContadoresOcultos.BackColor = System.Drawing.Color.Black;
+            this.PanelContadoresOcultos.Controls.Add(this.Min2);
+            this.PanelContadoresOcultos.Controls.Add(this.Seg3);
+            this.PanelContadoresOcultos.Controls.Add(this.Seg2);
+            this.PanelContadoresOcultos.Controls.Add(this.Ms);
+            this.PanelContadoresOcultos.Controls.Add(this.Ms3);
+            this.PanelContadoresOcultos.Controls.Add(this.Ms2);
+            this.PanelContadoresOcultos.Controls.Add(this.LblServidor);
+            this.PanelContadoresOcultos.ForeColor = System.Drawing.Color.White;
+            this.PanelContadoresOcultos.Location = new System.Drawing.Point(31, 77);
+            this.PanelContadoresOcultos.Name = "PanelContadoresOcultos";
+            this.PanelContadoresOcultos.Size = new System.Drawing.Size(282, 87);
+            this.PanelContadoresOcultos.TabIndex = 3;
+            this.PanelContadoresOcultos.Visible = false;
+            // 
+            // Min2
+            // 
+            this.Min2.AutoSize = true;
+            this.Min2.Location = new System.Drawing.Point(50, 10);
+            this.Min2.Name = "Min2";
+            this.Min2.Size = new System.Drawing.Size(35, 15);
+            this.Min2.TabIndex = 14;
+            this.Min2.Text = "Min2";
+            // 
+            // Seg3
+            // 
+            this.Seg3.AutoSize = true;
+            this.Seg3.Location = new System.Drawing.Point(103, 34);
+            this.Seg3.Name = "Seg3";
+            this.Seg3.Size = new System.Drawing.Size(35, 15);
+            this.Seg3.TabIndex = 13;
+            this.Seg3.Text = "Seg3";
+            // 
+            // Seg2
+            // 
+            this.Seg2.AutoSize = true;
+            this.Seg2.Location = new System.Drawing.Point(103, 10);
+            this.Seg2.Name = "Seg2";
+            this.Seg2.Size = new System.Drawing.Size(35, 15);
+            this.Seg2.TabIndex = 12;
+            this.Seg2.Text = "Seg2";
+            // 
+            // Ms
+            // 
+            this.Ms.AutoSize = true;
+            this.Ms.Location = new System.Drawing.Point(156, 10);
+            this.Ms.Name = "Ms";
+            this.Ms.Size = new System.Drawing.Size(23, 15);
+            this.Ms.TabIndex = 11;
+            this.Ms.Text = "Ms";
+            // 
+            // Ms3
+            // 
+            this.Ms3.AutoSize = true;
+            this.Ms3.Location = new System.Drawing.Point(156, 58);
+            this.Ms3.Name = "Ms3";
+            this.Ms3.Size = new System.Drawing.Size(30, 15);
+            this.Ms3.TabIndex = 10;
+            this.Ms3.Text = "Ms3";
+            // 
+            // Ms2
+            // 
+            this.Ms2.AutoSize = true;
+            this.Ms2.Location = new System.Drawing.Point(156, 34);
+            this.Ms2.Name = "Ms2";
+            this.Ms2.Size = new System.Drawing.Size(30, 15);
+            this.Ms2.TabIndex = 9;
+            this.Ms2.Text = "Ms2";
+            // 
+            // LblServidor
+            // 
+            this.LblServidor.AutoSize = true;
+            this.LblServidor.Location = new System.Drawing.Point(202, 58);
+            this.LblServidor.Name = "LblServidor";
+            this.LblServidor.Size = new System.Drawing.Size(71, 15);
+            this.LblServidor.TabIndex = 8;
+            this.LblServidor.Text = "LblServidor";
+            // 
             // PanelInstallServer
             // 
-            this.PanelInstallServer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(39)))));
+            this.PanelInstallServer.BackColor = System.Drawing.Color.Black;
             this.PanelInstallServer.Controls.Add(this.PanelInstalando);
             this.PanelInstallServer.Controls.Add(this.BtnInstalarServidor);
             this.PanelInstallServer.Controls.Add(this.panel2);
@@ -306,12 +388,12 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
             // 
             // Lbl_buscador_de_servidores
             // 
-            this.Lbl_buscador_de_servidores.AutoSize = true;
+            this.Lbl_buscador_de_servidores.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Lbl_buscador_de_servidores.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Lbl_buscador_de_servidores.ForeColor = System.Drawing.Color.White;
-            this.Lbl_buscador_de_servidores.Location = new System.Drawing.Point(17, 60);
+            this.Lbl_buscador_de_servidores.Location = new System.Drawing.Point(3, 0);
             this.Lbl_buscador_de_servidores.Name = "Lbl_buscador_de_servidores";
-            this.Lbl_buscador_de_servidores.Size = new System.Drawing.Size(356, 30);
+            this.Lbl_buscador_de_servidores.Size = new System.Drawing.Size(388, 150);
             this.Lbl_buscador_de_servidores.TabIndex = 1;
             this.Lbl_buscador_de_servidores.Text = "Buscando servidores instalados...";
             // 
@@ -357,13 +439,7 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.Min2);
-            this.groupBox2.Controls.Add(this.Seg3);
-            this.groupBox2.Controls.Add(this.Seg2);
-            this.groupBox2.Controls.Add(this.Ms);
-            this.groupBox2.Controls.Add(this.Ms3);
-            this.groupBox2.Controls.Add(this.Ms2);
-            this.groupBox2.Controls.Add(this.LblServidor);
+            this.groupBox2.Controls.Add(this.PanelContadoresOcultos);
             this.groupBox2.Controls.Add(this.TxtEliminaBD);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.ForeColor = System.Drawing.Color.White;
@@ -373,76 +449,6 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Script para Eliminar la base de datos";
-            // 
-            // Min2
-            // 
-            this.Min2.AutoSize = true;
-            this.Min2.Location = new System.Drawing.Point(18, 80);
-            this.Min2.Name = "Min2";
-            this.Min2.Size = new System.Drawing.Size(35, 15);
-            this.Min2.TabIndex = 7;
-            this.Min2.Text = "Min2";
-            this.Min2.Visible = false;
-            // 
-            // Seg3
-            // 
-            this.Seg3.AutoSize = true;
-            this.Seg3.Location = new System.Drawing.Point(71, 104);
-            this.Seg3.Name = "Seg3";
-            this.Seg3.Size = new System.Drawing.Size(35, 15);
-            this.Seg3.TabIndex = 6;
-            this.Seg3.Text = "Seg3";
-            this.Seg3.Visible = false;
-            // 
-            // Seg2
-            // 
-            this.Seg2.AutoSize = true;
-            this.Seg2.Location = new System.Drawing.Point(71, 80);
-            this.Seg2.Name = "Seg2";
-            this.Seg2.Size = new System.Drawing.Size(35, 15);
-            this.Seg2.TabIndex = 5;
-            this.Seg2.Text = "Seg2";
-            this.Seg2.Visible = false;
-            // 
-            // Ms
-            // 
-            this.Ms.AutoSize = true;
-            this.Ms.Location = new System.Drawing.Point(124, 80);
-            this.Ms.Name = "Ms";
-            this.Ms.Size = new System.Drawing.Size(23, 15);
-            this.Ms.TabIndex = 4;
-            this.Ms.Text = "Ms";
-            this.Ms.Visible = false;
-            // 
-            // Ms3
-            // 
-            this.Ms3.AutoSize = true;
-            this.Ms3.Location = new System.Drawing.Point(124, 128);
-            this.Ms3.Name = "Ms3";
-            this.Ms3.Size = new System.Drawing.Size(30, 15);
-            this.Ms3.TabIndex = 3;
-            this.Ms3.Text = "Ms3";
-            this.Ms3.Visible = false;
-            // 
-            // Ms2
-            // 
-            this.Ms2.AutoSize = true;
-            this.Ms2.Location = new System.Drawing.Point(124, 104);
-            this.Ms2.Name = "Ms2";
-            this.Ms2.Size = new System.Drawing.Size(30, 15);
-            this.Ms2.TabIndex = 2;
-            this.Ms2.Text = "Ms2";
-            this.Ms2.Visible = false;
-            // 
-            // LblServidor
-            // 
-            this.LblServidor.AutoSize = true;
-            this.LblServidor.Location = new System.Drawing.Point(170, 128);
-            this.LblServidor.Name = "LblServidor";
-            this.LblServidor.Size = new System.Drawing.Size(71, 15);
-            this.LblServidor.TabIndex = 1;
-            this.LblServidor.Text = "LblServidor";
-            this.LblServidor.Visible = false;
             // 
             // TxtEliminaBD
             // 
@@ -646,6 +652,8 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
             this.Load += new System.EventHandler(this.InstalacionBD_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.PanelContadoresOcultos.ResumeLayout(false);
+            this.PanelContadoresOcultos.PerformLayout();
             this.PanelInstallServer.ResumeLayout(false);
             this.PanelInstalando.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -654,11 +662,9 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -671,7 +677,6 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel PanelInstallServer;
-        private System.Windows.Forms.Button BtnInstalarServidor;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RichTextBox TxtConfigFile;
@@ -695,6 +700,10 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer TimerCRARINI;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label Lbl_buscador_de_servidores;
+        private System.Windows.Forms.Button BtnInstalarServidor;
         private System.Windows.Forms.Panel PanelInstalando;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel PanelTemporizador;
@@ -707,15 +716,13 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
         private System.Windows.Forms.Label LblMsjInstalando;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label LblServidor;
+        private System.Windows.Forms.Panel PanelContadoresOcultos;
         private System.Windows.Forms.Label Min2;
         private System.Windows.Forms.Label Seg3;
         private System.Windows.Forms.Label Seg2;
         private System.Windows.Forms.Label Ms;
         private System.Windows.Forms.Label Ms3;
         private System.Windows.Forms.Label Ms2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label Lbl_buscador_de_servidores;
+        private System.Windows.Forms.Label LblServidor;
     }
 }

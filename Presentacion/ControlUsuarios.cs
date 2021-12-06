@@ -37,6 +37,7 @@ namespace Sistema_de_asistencias.Presentacion
 
         private void HabilitarPaneles()
         {
+            panel1.Visible = false;
             PanelRegistros.Visible = true;
             LblAnuncioIcono.Visible = true;
             PanelIconos.Visible = false;
@@ -62,6 +63,7 @@ namespace Sistema_de_asistencias.Presentacion
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             if(!string.IsNullOrEmpty(TxtNombre.Text))
             {
                 if(!string.IsNullOrEmpty(TxtUsuario.Text))
@@ -264,6 +266,7 @@ namespace Sistema_de_asistencias.Presentacion
         private void BtnVolverRegistros_Click(object sender, EventArgs e)
         {
             PanelRegistros.Visible = false;
+            panel1.Visible = true;
         }
 
         private void BtnVolverdePanelIconos_Click(object sender, EventArgs e)
@@ -421,6 +424,7 @@ namespace Sistema_de_asistencias.Presentacion
 
         private void BtnActualizar_Click(object sender, EventArgs e)
         {
+            panel1.Visible = true;
             if(!string.IsNullOrEmpty(TxtNombre.Text))
             {
                 if(!string.IsNullOrEmpty(TxtUsuario.Text))

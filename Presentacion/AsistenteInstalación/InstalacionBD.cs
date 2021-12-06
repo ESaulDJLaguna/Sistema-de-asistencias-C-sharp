@@ -142,8 +142,8 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
                 EjecutarScript();
                 PanelInstalando.Visible = true;
                 PanelInstalando.Dock = DockStyle.Fill;
-                LblMsjInstalando.Text = @"Instancia Encontrada...
-            No Cierre esta Ventana, se cerrara Automaticamente cuando este todo Listo";
+                LblMsjInstalando.Text = @"Instancia Encontrada... No Cierre esta Ventana, se cerrara Automaticamente cuando este todo Listo";
+                LblMsjInstalando.BringToFront();
                 PanelTemporizador.Visible = false;
                 // Iniciamos el timer3
                 timer3.Start();
@@ -154,7 +154,7 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
                 PanelTemporizador.Visible = true;
                 PanelInstalando.Visible = false;
                 PanelInstalando.Dock = DockStyle.None;
-                Lbl_buscador_de_servidores.Text = "De clic a Instalar Servidor, luego de clic a SÍ cuando se le pida, luego presione ACEPTAR y espere, por favor";
+                Lbl_buscador_de_servidores.Text = "De clic a Instalar Servidor, luego de clic a SÍ cuando se le pida, luego presione ACEPTAR y espere, por favor.";
             }
         }
 
@@ -276,6 +276,7 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
             }
             
         }
+        // Muestra mensaje que pide dónde se extrearán los archivos para instalar el Servidor
         private void Executa()
         {
             try
@@ -288,7 +289,7 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
                 PanelInstallServer.Visible = true;
                 PanelInstallServer.Dock = DockStyle.Fill;
             }
-            catch (Exception) {}
+            catch (Exception ex) { }
         }
 
         private void TimerCRARINI_Tick(object sender, EventArgs e)
@@ -309,9 +310,9 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
                 sw.Close();
                 TimerCRARINI.Stop();
             }
-            catch(Exception ex) { }
+            catch (Exception ex) { }
         }
-
+        // Se da un estimado de 6 minutos para instalar SQL server
         private void timer1_Tick(object sender, EventArgs e)
         {
             milisegundos1 += 1;
@@ -328,6 +329,7 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
                 Min.Text = Convert.ToString(minutos1);
                 segundos1 = 0;
             }
+            // Después de 6 minutos, intentamos eliminar la base de datos
             if(minutos1 == 6)
             {
                 timer1.Stop();
@@ -347,20 +349,17 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
                 myConn.Open();
                 myCommand.ExecuteNonQuery();
             }
-            catch(Exception ex)
-            {
-
-            }
+            catch (Exception ex) { }
             finally
             {
-                if(myConn.State == ConnectionState.Open)
+                if (myConn.State == ConnectionState.Open)
                 {
                     myConn.Close();
                 }
             }
         }
         private void Ejecutar_Script_Crear_Base()
-        {
+         {
             SqlConnection cnn = new SqlConnection("Server=" + LblServidor.Text + "; database=master;integrated security=yes");
             string s = "CREATE DATABASE " + TxtNombreBD.Text;
             SqlCommand cmd = new SqlCommand(s, cnn);
@@ -372,10 +371,7 @@ namespace Sistema_de_asistencias.Presentacion.AsistenteInstalación
                 EjecutarScript();
                 timer3.Start();
             }
-            catch (Exception ex)
-            {
-
-            }
+            catch (Exception ex) { }
             finally
             {
                 if (cnn.State == ConnectionState.Open)

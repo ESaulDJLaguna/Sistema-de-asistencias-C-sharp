@@ -42,6 +42,8 @@ namespace Sistema_de_asistencias.Presentacion
             PanelRegistros.Visible = true;
             // ... y ocupará el total del panel
             PanelRegistros.Dock = DockStyle.Fill;
+            // Ocultar el panel del buscador y agregar nuevo personal
+            panel1.Visible = false;
             // El botón para guardar personal será visible
             BtnGuardarPersonal.Visible = true;
             // El botón para guardar cambios en el personal no se verá
@@ -352,6 +354,8 @@ namespace Sistema_de_asistencias.Presentacion
         // Evento que se disparará cuando se dé clic a la flecha verde en el PanelRegistros
         private void BtnVolverPersonal_Click(object sender, EventArgs e)
         {
+            // Vuelve a mostrar el panel con el buscador y agregar nuevo personal
+            panel1.Visible = true;
             // El Panel para agregar nuevo personal ya no será visible
             PanelRegistros.Visible = false;
             // El Panel del paginado será visible

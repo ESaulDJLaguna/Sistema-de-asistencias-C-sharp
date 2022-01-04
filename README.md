@@ -97,7 +97,7 @@ Al dar clic en el botón 'Registro', abrirá un nuevo formulario en el cual se r
 1. Clonar el repositorio:
 
 ```
-git clone https://github.com/ESaulDJLaguna/Sistema-de-asistencias-CS.git
+git clone https://github.com/ESaulDJLaguna/estudio-SistemaDeAsistenciasCS.git
 ```
 
 2. Acceder a la carpeta creada (Sistema-de-asistencias-CS) y abrir el archivo _Sistema de asistencias.sln_ utilizando [Visual Studio](https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=Community&rel=17).
